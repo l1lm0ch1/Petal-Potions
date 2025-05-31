@@ -4,6 +4,8 @@ using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class CauldronController : MonoBehaviour
 {
+    public ParticleSystem failedPotion;
+    public ParticleSystem createdPotion;
     public Transform spawnPoint;
     public List<PotionCombination> potionCombinations; // im Inspector pflegbar
     private List<string> currentPetals = new();
@@ -29,6 +31,7 @@ public class CauldronController : MonoBehaviour
         {
             if (combo.MatchKey == key)
             {
+                createdPotion.Play();
                 Instantiate(combo.potionPrefab, spawnPoint.position, Quaternion.identity);
                 currentPetals.Clear();
                 return;
@@ -37,5 +40,6 @@ public class CauldronController : MonoBehaviour
 
         Debug.Log("Ungültige Kombination: " + key);
         currentPetals.Clear();
+        failedPotion.Play();
     }
 }

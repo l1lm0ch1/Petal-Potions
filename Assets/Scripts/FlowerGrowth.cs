@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class FlowerGrowth : MonoBehaviour
 {
+    [Header("Blumen-Daten")]
+    public FlowerData flowerData; // HIER wird die Blumen-Art angegeben!
+
     [Header("Wachstum")]
     public float growthSpeed = 0.5f; // Wie schnell wächst die Blume (kann randomisiert werden)
     private float currentGrowth = 0f; // 0 = klein, 100 = voll ausgewachsen
@@ -17,14 +20,18 @@ public class FlowerGrowth : MonoBehaviour
 
     private bool isFullyGrown = false;
 
-    public bool getFlowerGrowth() { 
+    public bool getFlowerGrowth()
+    {
         return isFullyGrown;
     }
 
     void Start()
     {
-        growthSlider.value = 0f;
-        skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, 0f);
+        if (growthSlider != null)
+            growthSlider.value = 0f;
+
+        if (skinnedMeshRenderer != null)
+            skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, 0f);
     }
 
     void Update()
@@ -40,10 +47,12 @@ public class FlowerGrowth : MonoBehaviour
             }
 
             // Blendshape updaten
-            skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, currentGrowth);
+            if (skinnedMeshRenderer != null)
+                skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, currentGrowth);
 
             // UI updaten
-            growthSlider.value = currentGrowth / 100f;
+            if (growthSlider != null)
+                growthSlider.value = currentGrowth / 100f;
         }
     }
 
@@ -52,7 +61,18 @@ public class FlowerGrowth : MonoBehaviour
         if (isFullyGrown)
         {
             Debug.Log("Blume gepflückt!");
-            Destroy(gameObject); // oder Prefab für „geerntete Blume“ spawnen
+
+            // Prüfen, ob flowerData gesetzt ist
+            if (flowerData != null)
+            {
+                FlowerInventory.Instance.AddPetals(flowerData, 1);
+            }
+            else
+            {
+                Debug.LogWarning("Kein FlowerData verknüpft!");
+            }
+
+            Destroy(gameObject); // Blume verschwindet
         }
     }
 }

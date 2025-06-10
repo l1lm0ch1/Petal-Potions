@@ -4,21 +4,19 @@ using UnityEngine.UI;
 public class FlowerGrowth : MonoBehaviour
 {
     [Header("Blumen-Daten")]
-    public FlowerData flowerData; // HIER wird die Blumen-Art angegeben!
+    public FlowerData flowerData; // Gibt die Blumen-Art an
 
     [Header("Wachstum")]
-    public float growthSpeed = 0.5f; // Wie schnell wächst die Blume (kann randomisiert werden)
+    public float growthSpeed = 0.5f; // Wie schnell wächst die Blume
     private float currentGrowth = 0f; // 0 = klein, 100 = voll ausgewachsen
-
-    [Header("Blendshape")]
-    public SkinnedMeshRenderer skinnedMeshRenderer;
-    public int growthBlendshapeIndex = 0;
 
     [Header("UI")]
     public Canvas worldCanvas;
     public Slider growthSlider;
 
     private bool isFullyGrown = false;
+    private Vector3 initialScale;
+    public Vector3 targetScale = Vector3.one;
 
     public bool getFlowerGrowth()
     {
@@ -30,8 +28,8 @@ public class FlowerGrowth : MonoBehaviour
         if (growthSlider != null)
             growthSlider.value = 0f;
 
-        if (skinnedMeshRenderer != null)
-            skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, 0f);
+        initialScale = Vector3.zero;
+        transform.localScale = initialScale;
     }
 
     void Update()
@@ -46,13 +44,13 @@ public class FlowerGrowth : MonoBehaviour
                 Debug.Log("Blume ausgewachsen und bereit zum Pflücken!");
             }
 
-            // Blendshape updaten
-            if (skinnedMeshRenderer != null)
-                skinnedMeshRenderer.SetBlendShapeWeight(growthBlendshapeIndex, currentGrowth);
+            // Skalierung anwenden
+            float t = currentGrowth / 100f;
+            transform.localScale = Vector3.Lerp(initialScale, targetScale, t);
 
             // UI updaten
             if (growthSlider != null)
-                growthSlider.value = currentGrowth / 100f;
+                growthSlider.value = t;
         }
     }
 
@@ -62,7 +60,6 @@ public class FlowerGrowth : MonoBehaviour
         {
             Debug.Log("Blume gepflückt!");
 
-            // Prüfen, ob flowerData gesetzt ist
             if (flowerData != null)
             {
                 FlowerInventory.Instance.AddPetals(flowerData, 1);
@@ -72,7 +69,7 @@ public class FlowerGrowth : MonoBehaviour
                 Debug.LogWarning("Kein FlowerData verknüpft!");
             }
 
-            Destroy(gameObject); // Blume verschwindet
+            Destroy(gameObject);
         }
     }
 }

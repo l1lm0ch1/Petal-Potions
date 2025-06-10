@@ -9,10 +9,12 @@ public class CauldronController : MonoBehaviour
     public Transform spawnPoint;
     public List<PotionCombination> potionCombinations; // im Inspector pflegbar
     private List<string> currentPetals = new();
+    public AudioSource potionSuccess;
+    public AudioSource potionFailure;
 
     private void OnTriggerEnter(Collider other)
     {
-        Petal petal = other.GetComponent<Petal>();
+        PetalData petal = other.GetComponent<PetalData>();
         if (petal == null || currentPetals.Count >= 2) return;
 
         currentPetals.Add(petal.petalID);
@@ -32,6 +34,7 @@ public class CauldronController : MonoBehaviour
             if (combo.MatchKey == key)
             {
                 createdPotion.Play();
+                potionSuccess.Play();
                 Instantiate(combo.potionPrefab, spawnPoint.position, Quaternion.identity);
                 currentPetals.Clear();
                 return;
@@ -39,6 +42,7 @@ public class CauldronController : MonoBehaviour
         }
 
         Debug.Log("Ungültige Kombination: " + key);
+        potionFailure.Play();
         currentPetals.Clear();
         failedPotion.Play();
     }

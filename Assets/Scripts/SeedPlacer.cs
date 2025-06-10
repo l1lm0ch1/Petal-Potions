@@ -6,11 +6,13 @@ public class SeedPlacer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Seed found");
         if (isOccupied) return;
 
         Seed seed = other.GetComponent<Seed>();
         if(seed != null && seed.flowerData != null )
         {
+            Debug.Log("Flower Planted");
             SpawnFlower(seed.flowerData);
             Destroy(other.gameObject);
             isOccupied = true;

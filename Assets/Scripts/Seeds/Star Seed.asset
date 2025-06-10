@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seedName: Star
   icon: {fileID: 21300000, guid: e8eef3f4730ba564481ff73e198491e7, type: 3}
-  flowerData: {fileID: 0}
+  flowerData: {fileID: 11400000, guid: 2420aa58073dec5429cb5ad806412769, type: 2}
   seedVisualPrefab: {fileID: 626839683445316082, guid: 420d0c3e8ee53584a90af2c8bb1155ed,
     type: 3}
   bagColor: {r: 0.9427508, g: 1, b: 0, a: 0}

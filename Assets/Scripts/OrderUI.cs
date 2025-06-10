@@ -11,7 +11,7 @@ public class OrderUI : MonoBehaviour
     public void Setup(OrderData order)
     {
         // Titel (optional)
-        titleText.text = "Aktueller Auftrag";
+        titleText.text = "Current Order";
 
         // Alte Entries löschen
         foreach (Transform child in itemsContainer)
@@ -30,13 +30,13 @@ public class OrderUI : MonoBehaviour
             {
                 entry.Setup(potion.icon, potion.potionName, item.amount);
             }
-            else if (item.item is FlowerData flower)
+            else if (item.item is PetalData petal)
             {
-                entry.Setup(flower.icon, flower.flowerName, item.amount);
+                entry.Setup(petal.icon, petal.petalName, item.amount);
             }
         }
 
         // Belohnungstext setzen
-        rewardText.text = $"Belohnung: {order.reward} Starshards";
+        rewardText.text = $"Reward: {order.reward} Starshards";
     }
 }

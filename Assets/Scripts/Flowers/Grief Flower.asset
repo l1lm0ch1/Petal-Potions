@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Grief Flower
   m_EditorClassIdentifier: 
   flowerName: Grief
-  growthDuration: 0
+  growthDuration: 0.1
   icon: {fileID: 21300000, guid: d84cfde4226ab6e4bbdebae20fd7814a, type: 3}
   basePrice: 0
   flowerPrefab: {fileID: 6701902396494995884, guid: 1c9c4e8fa1099304992febfacbcda5fd,

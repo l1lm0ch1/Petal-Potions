@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Water Flower
   m_EditorClassIdentifier: 
   flowerName: Water
-  growthDuration: 0
+  growthDuration: 0.1
   icon: {fileID: 21300000, guid: 8946d62b9516eae4db6312ab0fd179d4, type: 3}
   basePrice: 0
   flowerPrefab: {fileID: 8796394172417432335, guid: f8acbc7f0383f444f8d583a6e7fba438,

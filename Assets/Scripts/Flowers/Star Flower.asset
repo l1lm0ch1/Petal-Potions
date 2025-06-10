@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Star Flower
   m_EditorClassIdentifier: 
   flowerName: Star
-  growthDuration: 0
+  growthDuration: 0.1
   icon: {fileID: 21300000, guid: 9f7b570c10549754a9e9b6eb244440c3, type: 3}
   basePrice: 0
-  flowerPrefab: {fileID: 919132149155446097, guid: ee37cf7cd728b78449df3a7b695b2f89,
+  flowerPrefab: {fileID: 4372748047808583674, guid: ccff9f1156b913b46bd82faac499f49e,
     type: 3}

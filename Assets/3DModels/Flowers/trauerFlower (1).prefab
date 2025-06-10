@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.06
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
@@ -120,9 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43120851bc887fa4a80e4d24ddc8ae5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowerData: {fileID: 0}
+  flowerData: {fileID: 11400000, guid: 3b76d8f019230584d83f462ab05a1a56, type: 2}
   growthSpeed: 0.5
-  skinnedMeshRenderer: {fileID: 0}
-  growthBlendshapeIndex: 0
   worldCanvas: {fileID: 0}
   growthSlider: {fileID: 0}
+  targetScale: {x: 1, y: 1, z: 1}

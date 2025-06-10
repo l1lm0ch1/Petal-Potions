@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seedName: Heart
   icon: {fileID: 21300000, guid: b4e968400cee9164f8358bc7f2b17635, type: 3}
-  flowerData: {fileID: 0}
+  flowerData: {fileID: 11400000, guid: 417249c10a6422f4b98b43aaf3951a6c, type: 2}
   seedVisualPrefab: {fileID: 626839683445316082, guid: 420d0c3e8ee53584a90af2c8bb1155ed,
     type: 3}
   bagColor: {r: 1, g: 0, b: 0.3377614, a: 0}

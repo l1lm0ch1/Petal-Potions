@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Iridescent Flower
   m_EditorClassIdentifier: 
   flowerName: Iridescent
-  growthDuration: 0
+  growthDuration: 0.1
   icon: {fileID: 21300000, guid: 7240c0d9ea8f8b3469e04fc6a1cda37f, type: 3}
   basePrice: 0
   flowerPrefab: {fileID: 1409300919238204926, guid: 497fc7dca5d76a24aa3c30cd01bb0dd8,

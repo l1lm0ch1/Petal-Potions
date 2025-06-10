@@ -13,11 +13,11 @@ public class OrderManager : MonoBehaviour
     public int minAmountPerItem = 1;
     public int maxAmountPerItem = 5;
 
-    public int minReward = 10;
-    public int maxReward = 150;
+    public int minReward = 100;
+    public int maxReward = 350;
 
     [Header("Available Items")]
-    public List<FlowerData> allFlowers;
+    public List<PetalData> allPetals;
     public List<PotionData> allPotions;
 
     private List<OrderData> currentOrders = new();
@@ -40,7 +40,7 @@ public class OrderManager : MonoBehaviour
 
             // Mögliche Items Pool
             List<ScriptableObject> pool = new();
-            pool.AddRange(allFlowers);
+            pool.AddRange(allPetals);
             pool.AddRange(allPotions);
 
             // Random items für Order

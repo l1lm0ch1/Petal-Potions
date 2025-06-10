@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Heart Flower
   m_EditorClassIdentifier: 
   flowerName: Heart
-  growthDuration: 0
+  growthDuration: 0.1
   icon: {fileID: 21300000, guid: d9d65704d2079794c95d98e2a209bd54, type: 3}
   basePrice: 0
-  flowerPrefab: {fileID: 919132149155446097, guid: adafcd90a1d83d64fa8dad1888b3f2ce,
+  flowerPrefab: {fileID: 3126465643197264831, guid: 98ea39cb1cfe6b744930bebf513cd0f5,
     type: 3}

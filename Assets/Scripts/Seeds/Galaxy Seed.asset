@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd308e5e79e82c643a1cbf5eafd1e943, type: 3}
+  m_Name: Galaxy Seed
+  m_EditorClassIdentifier: 
+  seedName: Galaxy
+  icon: {fileID: 21300000, guid: 3b0cdcd0d7865494eb880c0d2e0c5dcb, type: 3}
+  flowerData: {fileID: 11400000, guid: 4f6d9fd0143e6154694c20bf589d8d17, type: 2}
+  seedVisualPrefab: {fileID: 626839683445316082, guid: 420d0c3e8ee53584a90af2c8bb1155ed,
+    type: 3}
+  bagColor: {r: 0.34764096, g: 0.28635636, b: 0.6132076, a: 0}
+  flowerName: Galaxy

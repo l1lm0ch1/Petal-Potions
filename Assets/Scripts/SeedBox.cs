@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SeedBox : MonoBehaviour
 {
-    public FlowerData seedType; // z.B. Rose, Tulpe, etc.
+    public SeedData seedType; // z.B. Rose, Tulpe, etc.
 
     // Methode, die beim "Anklicken" mit dem Controller aufgerufen wird:
     public void SelectSeed()

@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class OrderManager : MonoBehaviour
 {
+    [Header("UI")]
+    public OrderUI orderUI;
+
     [Header("Order Settings")]
     public int minItemsPerOrder = 1;
     public int maxItemsPerOrder = 3;
@@ -11,7 +14,7 @@ public class OrderManager : MonoBehaviour
     public int maxAmountPerItem = 5;
 
     public int minReward = 10;
-    public int maxReward = 50;
+    public int maxReward = 150;
 
     [Header("Available Items")]
     public List<FlowerData> allFlowers;
@@ -20,6 +23,11 @@ public class OrderManager : MonoBehaviour
     private List<OrderData> currentOrders = new();
 
     public List<OrderData> GetCurrentOrders() => currentOrders;
+
+    private void Awake()
+    {
+        GenerateOrders(10);
+    }
 
     public void GenerateOrders(int numberOfOrders)
     {
@@ -58,5 +66,10 @@ public class OrderManager : MonoBehaviour
         }
 
         Debug.Log("Orders generiert: " + currentOrders.Count);
+
+        if(orderUI != null && currentOrders.Count > 0)
+        {
+            orderUI.Setup(currentOrders[0]);
+        }
     }
 }

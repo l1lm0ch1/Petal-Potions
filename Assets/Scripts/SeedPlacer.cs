@@ -1,0 +1,37 @@
+using UnityEngine;
+
+public class SeedPlacer : MonoBehaviour
+{
+    private bool isOccupied = false;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (isOccupied) return;
+
+        Seed seed = other.GetComponent<Seed>();
+        if(seed != null && seed.flowerData != null )
+        {
+            SpawnFlower(seed.flowerData);
+            Destroy(other.gameObject);
+            isOccupied = true;
+        }
+    }
+
+    private void SpawnFlower(FlowerData data)
+    {
+        GameObject flowerGO = Instantiate(data.flowerPrefab, transform.position, Quaternion.identity);
+        FlowerGrowth growth = flowerGO.GetComponent<FlowerGrowth>();
+        if(growth != null)
+        {
+            growth.flowerData = data;
+            growth.enabled = true;
+        }
+
+        Debug.Log($"Blume '{data.flowerName}' wurde im Slot gepflanzt");
+    }
+
+    public void ResetSlot()
+    {
+        isOccupied = false;
+    }
+}

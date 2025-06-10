@@ -4,8 +4,6 @@ using UnityEngine;
 public class FlowerData : ScriptableObject
 {
     public string flowerName;
-    public Mesh flowerMesh;
-    public Material flowerMaterial;
     public float growthDuration; // in Sekunden
     public Sprite icon;
     public int basePrice;

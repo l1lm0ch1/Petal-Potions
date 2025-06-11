@@ -4,7 +4,7 @@ using UnityEngine;
 public class FlowerInventory : MonoBehaviour
 {
     public static FlowerInventory Instance;
-    private Dictionary<FlowerData, int> flowerPetalCounts = new();
+    private Dictionary<PetalData, int> flowerPetalCounts = new();
 
     void Awake()
     {
@@ -12,17 +12,17 @@ public class FlowerInventory : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void AddPetals(FlowerData flower, int amount)
+    public void AddPetals(PetalData petal, int amount)
     {
-        if (!flowerPetalCounts.ContainsKey(flower))
-            flowerPetalCounts[flower] = 0;
+        if (!flowerPetalCounts.ContainsKey(petal))
+            flowerPetalCounts[petal] = 0;
 
-        flowerPetalCounts[flower] += amount;
-        Debug.Log("Blütenblätter gezählt: " + flower.flowerName + " → " + flowerPetalCounts[flower]);
+        flowerPetalCounts[petal] += amount;
+        Debug.Log("Blütenblätter gezählt: " + petal.petalName + " → " + flowerPetalCounts[petal]);
     }
 
-    public int GetPetalCount(FlowerData flower)
+    public int GetPetalCount(PetalData petal)
     {
-        return flowerPetalCounts.ContainsKey(flower) ? flowerPetalCounts[flower] : 0;
+        return flowerPetalCounts.ContainsKey(petal) ? flowerPetalCounts[petal] : 0;
     }
 }

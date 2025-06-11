@@ -8,6 +8,7 @@ public class PetalData : ScriptableObject
     public int basePrice; // z. B. Handelswert oder Punktzahl
     public GameObject petalPrefab;
     public string petalID;
+    public int Inventory;
 
     // evtl. spätere Effekte für Tränke
 }

@@ -5,6 +5,7 @@ public class FlowerGrowth : MonoBehaviour
 {
     [Header("Blumen-Daten")]
     public FlowerData flowerData; // Gibt die Blumen-Art an
+    public PetalData petalData;
 
     [Header("Wachstum")]
     public float growthSpeed = 0.5f; // Wie schnell wächst die Blume
@@ -62,7 +63,7 @@ public class FlowerGrowth : MonoBehaviour
 
             if (flowerData != null)
             {
-                FlowerInventory.Instance.AddPetals(flowerData, 1);
+                FlowerInventory.Instance.AddPetals(petalData, 1);
             }
             else
             {

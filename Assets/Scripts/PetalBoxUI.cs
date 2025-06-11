@@ -4,19 +4,19 @@ using UnityEngine.UI;
 
 public class PetalBoxUI : MonoBehaviour
 {
-    public FlowerData flowerType;
+    public PetalData petalType;
     public TMP_Text countText;
     public Image iconImage;
 
     void Start()
     {
-        iconImage.sprite = flowerType.icon;
+        iconImage.sprite = petalType.icon;
         UpdateCount();
     }
 
     public void UpdateCount()
     {
-        int count = FlowerInventory.Instance.GetPetalCount(flowerType);
+        int count = FlowerInventory.Instance.GetPetalCount(petalType);
         countText.text = count.ToString();
     }
 }

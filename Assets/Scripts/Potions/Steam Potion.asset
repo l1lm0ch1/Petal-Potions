@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Steam Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 728216094738292850, guid: 6cade6ebd3e7b5540a5f4a156f92f3b5, type: 3}

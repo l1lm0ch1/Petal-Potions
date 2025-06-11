@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Echo Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 1751852020855295297, guid: 664f8756eadf19a45bddd42bdbe4be4b, type: 3}

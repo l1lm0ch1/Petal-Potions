@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Cosmic Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 1682473266196708427, guid: 9ced558b1475b144892865cdac2b1b64, type: 3}

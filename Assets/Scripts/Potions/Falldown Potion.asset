@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Falldown Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 1895334925515109366, guid: 28523f81f7def034dbcdcef81234ad20, type: 3}

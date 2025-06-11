@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class CauldronController : MonoBehaviour
 {
@@ -14,10 +13,13 @@ public class CauldronController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PetalData petal = other.GetComponent<PetalData>();
-        if (petal == null || currentPetals.Count >= 2) return;
+        // Holt das PetalDataHolder Script vom Objekt, das den Collider ausgelöst hat
+        PetalDataHolder holder = other.GetComponent<PetalDataHolder>();
+        if (holder == null || holder.petalData == null || currentPetals.Count >= 2)
+            return;
 
-        currentPetals.Add(petal.petalID);
+        // Holt die ID aus dem ScriptableObject
+        currentPetals.Add(holder.petalData.petalID);
         Destroy(other.gameObject);
 
         if (currentPetals.Count == 2)

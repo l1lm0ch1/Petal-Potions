@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Balance Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 7299806298284992505, guid: 8a377006e69c803409d5cd3b4494d3e4, type: 3}

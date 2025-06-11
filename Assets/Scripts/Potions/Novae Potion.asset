@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Novae Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 6796958822129247924, guid: d10486e21e343044b9dec8a9ad8b7c44, type: 3}

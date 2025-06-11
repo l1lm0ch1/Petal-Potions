@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Fate Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 2400601258888481590, guid: 211c73184d12dcd4ca446b2aa20fb6c5, type: 3}

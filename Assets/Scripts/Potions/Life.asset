@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Life Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 5872377921075939702, guid: b9105fadc9868c24d81f257c0361bccc, type: 3}

@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Heartbreak Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 5480682430680336602, guid: e46586a4e79e2684d86290e192136092, type: 3}

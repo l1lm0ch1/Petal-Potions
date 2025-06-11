@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Prism Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 278310836632328891, guid: e7be47c7f81edcb46b0adc41cb060655, type: 3}

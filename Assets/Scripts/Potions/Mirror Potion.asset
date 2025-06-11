@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Mirror Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 7711208658253778944, guid: 892413f8a6af3924cb261b8475ef976d, type: 3}

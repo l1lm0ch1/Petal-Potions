@@ -15,4 +15,4 @@ MonoBehaviour:
   potionName: Vengance Potion
   icon: {fileID: 0}
   basePrice: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 8493029652505763577, guid: 93e00c254b035af44a2306f0778f4cf4, type: 3}

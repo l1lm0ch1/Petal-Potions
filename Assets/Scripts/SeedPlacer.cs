@@ -3,6 +3,7 @@ using UnityEngine;
 public class SeedPlacer : MonoBehaviour
 {
     private bool isOccupied = false;
+    public ParticleSystem ParticleSystem;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,7 +22,7 @@ public class SeedPlacer : MonoBehaviour
 
     private void SpawnFlower(FlowerData data)
     {
-        GameObject flowerGO = Instantiate(data.flowerPrefab, transform.position, Quaternion.identity);
+        GameObject flowerGO = Instantiate(data.flowerPrefab, transform.position, data.flowerPrefab.transform.rotation);
         FlowerGrowth growth = flowerGO.GetComponent<FlowerGrowth>();
         if(growth != null)
         {
@@ -30,6 +31,7 @@ public class SeedPlacer : MonoBehaviour
         }
 
         Debug.Log($"Blume '{data.flowerName}' wurde im Slot gepflanzt");
+        ParticleSystem.Play();
     }
 
     public void ResetSlot()

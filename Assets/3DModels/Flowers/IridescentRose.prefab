@@ -31,17 +31,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.1428776
+      value: 5.852011
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.437849
+      value: 5.7004275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
@@ -56,12 +56,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc75995b5ac881d4cbac1128c796fdd7,
         type: 3}
@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowerData: {fileID: 11400000, guid: 13ba23a5c8aab31498befaa3197b8b0a, type: 2}
+  petalData: {fileID: 0}
   growthSpeed: 0.5
   worldCanvas: {fileID: 0}
   growthSlider: {fileID: 0}

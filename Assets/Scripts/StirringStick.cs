@@ -17,7 +17,7 @@ public class StirringStick : MonoBehaviour
         if(IsInCauldron && speed > 0.2f)
         {
             stirAmount += speed * Time.deltaTime;
-            if(stirAmount >= 15f)
+            if(stirAmount >= 8f)
             {
                 controller.TryCraftPotion();
                 stirAmount = 0f;

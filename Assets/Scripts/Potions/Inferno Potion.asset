@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Inferno Potion
   m_EditorClassIdentifier: 
   potionName: Inferno Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: df1c97612e4bb7c47a7cefc5caf2ddf5, type: 3}
   basePrice: 0
   prefab: {fileID: 5095116402814845362, guid: b96046eee5610154db7bc287e20b7d26, type: 3}

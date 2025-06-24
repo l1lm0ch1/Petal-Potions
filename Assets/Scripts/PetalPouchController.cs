@@ -3,6 +3,16 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PetalPouchController : MonoBehaviour
 {
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Controller")
+        {
+
+        }
+    }
+
+
+    /*
     public Transform spawnPoint;
     public XRGrabInteractable spawnablePrefabWrapper; // Optional für erweiterte Kontrolle
     private PetalData currentSelectedPetal;
@@ -16,13 +26,16 @@ public class PetalPouchController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (currentSelectedPetal == null) return;
-
-        XRBaseInteractor interactor = other.GetComponent<XRBaseInteractor>();
-        if (interactor != null)
+        if(other.tag == "Controller")
         {
-            handInteractor = interactor;
-            TrySpawnPetal();
+            if (currentSelectedPetal == null) return;
+
+            XRBaseInteractor interactor = other.GetComponent<XRBaseInteractor>();
+            if (interactor != null)
+            {
+                handInteractor = interactor;
+                TrySpawnPetal();
+            }
         }
     }
 
@@ -44,4 +57,5 @@ public class PetalPouchController : MonoBehaviour
     }
 
     [SerializeField] private XRInteractionManager interactionManager;
+    */
 }

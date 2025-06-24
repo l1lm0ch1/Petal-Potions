@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Cosmic
   m_EditorClassIdentifier: 
   potionName: Cosmic Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: d7f900b3b86a41245a8464df1909a319, type: 3}
   basePrice: 0
   prefab: {fileID: 1682473266196708427, guid: 9ced558b1475b144892865cdac2b1b64, type: 3}

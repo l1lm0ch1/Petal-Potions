@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Novae Potion
   m_EditorClassIdentifier: 
   potionName: Novae Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4a021fbd6daeb4f4cb82be9d175edfff, type: 3}
   basePrice: 0
   prefab: {fileID: 6796958822129247924, guid: d10486e21e343044b9dec8a9ad8b7c44, type: 3}

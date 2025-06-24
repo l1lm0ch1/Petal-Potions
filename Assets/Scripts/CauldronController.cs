@@ -21,12 +21,12 @@ public class CauldronController : MonoBehaviour
         // Holt die ID aus dem ScriptableObject
         currentPetals.Add(holder.petalData.petalID);
         Destroy(other.gameObject);
-
+        /*
         if (currentPetals.Count == 2)
-            TryCraftPotion();
+            TryCraftPotion();*/
     }
 
-    void TryCraftPotion()
+    public void TryCraftPotion()
     {
         currentPetals.Sort(); // alphabetisch, um Reihenfolge zu ignorieren
         string key = string.Join("+", currentPetals);

@@ -50,7 +50,7 @@ public class OrderManager : MonoBehaviour
 
                 int randIndex = Random.Range(0, pool.Count);
                 ScriptableObject randomItem = pool[randIndex];
-                pool.RemoveAt(randIndex);
+                //pool.RemoveAt(randIndex);
 
                 int randomAmount = Random.Range(minAmountPerItem, maxAmountPerItem + 1);
 

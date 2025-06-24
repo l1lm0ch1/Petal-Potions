@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Echo Potion
   m_EditorClassIdentifier: 
   potionName: Echo Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 61b7b5de5d29fd94195028d32655e09f, type: 3}
   basePrice: 0
   prefab: {fileID: 1751852020855295297, guid: 664f8756eadf19a45bddd42bdbe4be4b, type: 3}

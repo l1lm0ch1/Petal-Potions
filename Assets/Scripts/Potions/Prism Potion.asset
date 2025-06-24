@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Prism Potion
   m_EditorClassIdentifier: 
   potionName: Prism Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9c549703f45fef2499feb98312d99550, type: 3}
   basePrice: 0
   prefab: {fileID: 278310836632328891, guid: e7be47c7f81edcb46b0adc41cb060655, type: 3}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Heartbreak
   m_EditorClassIdentifier: 
   potionName: Heartbreak Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 3d500de2594d4c14f94903996bb2ee8a, type: 3}
   basePrice: 0
   prefab: {fileID: 5480682430680336602, guid: e46586a4e79e2684d86290e192136092, type: 3}

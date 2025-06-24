@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tears Potion
   m_EditorClassIdentifier: 
   potionName: Tears Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 62d653ace2b1a3f438768ba317c53ada, type: 3}
   basePrice: 0
   prefab: {fileID: 5650019081558929624, guid: b0d23bef9af576948b97539833029990, type: 3}

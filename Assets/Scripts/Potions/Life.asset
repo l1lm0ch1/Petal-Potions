@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Life
   m_EditorClassIdentifier: 
   potionName: Life Potion
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 77366f3c5fa6b4945aa741330213e224, type: 3}
   basePrice: 0
   prefab: {fileID: 5872377921075939702, guid: b9105fadc9868c24d81f257c0361bccc, type: 3}

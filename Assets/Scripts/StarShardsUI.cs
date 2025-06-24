@@ -8,7 +8,7 @@ public class StarshardsUI : MonoBehaviour
     void Start()
     {
         // Initial anzeigen
-        starshardsText.text = "Starshards: " + PlayerData.Instance.GetStarshards();
+        starshardsText.text = PlayerData.Instance.GetStarshards().ToString();
 
         // Event abonnieren
         PlayerData.Instance.OnStarshardsChanged += UpdateUI;
@@ -22,6 +22,6 @@ public class StarshardsUI : MonoBehaviour
 
     void UpdateUI(int newAmount)
     {
-        starshardsText.text = "Starshards: " + newAmount;
+        starshardsText.text = newAmount.ToString();
     }
 }

@@ -16,5 +16,5 @@ MonoBehaviour:
   growthDuration: 0.1
   icon: {fileID: 21300000, guid: 9bd581efa7347164fb0e71978373b979, type: 3}
   basePrice: 100
-  flowerPrefab: {fileID: 8061049638746874882, guid: 4418266adc113114ca374e95a6f7c9cd,
+  flowerPrefab: {fileID: 5793838068180473402, guid: f3d7402da523b6144b5015743ca71c95,
     type: 3}

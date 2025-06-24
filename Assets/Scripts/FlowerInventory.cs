@@ -12,13 +12,15 @@ public class FlowerInventory : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void AddPetals(PetalData petal, int amount)
+    public void AddPetals(PetalData petal)
     {
+        int randomAmount = Random.Range(3, 6); // random Nummer zw 3 und 5
+
         if (!flowerPetalCounts.ContainsKey(petal))
             flowerPetalCounts[petal] = 0;
 
-        flowerPetalCounts[petal] += amount;
-        Debug.Log("Blütenblätter gezählt: " + petal.petalName + " → " + flowerPetalCounts[petal]);
+        flowerPetalCounts[petal] += randomAmount;
+        Debug.Log("Blütenblätter gezählt: " + petal.petalName + " / " + flowerPetalCounts[petal] + " (+" + randomAmount + ")");
     }
 
     public int GetPetalCount(PetalData petal)

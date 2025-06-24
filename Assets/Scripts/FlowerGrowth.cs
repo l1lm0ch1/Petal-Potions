@@ -63,7 +63,7 @@ public class FlowerGrowth : MonoBehaviour
 
             if (flowerData != null)
             {
-                FlowerInventory.Instance.AddPetals(petalData, 1);
+                FlowerInventory.Instance.AddPetals(petalData);
             }
             else
             {

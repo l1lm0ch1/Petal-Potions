@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionName: Fate Potion
   icon: {fileID: 21300000, guid: 73d5bf6e673884249a5e3ae8d4142ac4, type: 3}
-  basePrice: 0
+  basePrice: 70
   prefab: {fileID: 2400601258888481590, guid: 211c73184d12dcd4ca446b2aa20fb6c5, type: 3}

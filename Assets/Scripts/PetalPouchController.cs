@@ -1,61 +1,93 @@
+ï»¿using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class PetalPouchController : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Controller")
-        {
+    [Header("Pouch Visual")]
+    public PetalPouch pouchVisual;
 
-        }
-    }
+    [Header("XR Setup")]
+    public XRInteractionManager interactionManager;
 
-
-    /*
-    public Transform spawnPoint;
-    public XRGrabInteractable spawnablePrefabWrapper; // Optional für erweiterte Kontrolle
     private PetalData currentSelectedPetal;
     private XRBaseInteractor handInteractor;
 
     public void SetSelectedPetal(PetalData petal)
     {
         currentSelectedPetal = petal;
-        // Optional: Ändere hier die Farbe oder Icon des Pouch-Visuals
+        Debug.Log("AusgewÃ¤hltes Petal: " + petal.petalName);
+
+        if (pouchVisual != null)
+        {
+            pouchVisual.UpdatePouchVisual(petal);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Controller")
         {
-            if (currentSelectedPetal == null) return;
+            Debug.Log("Hand in Pouch");
 
-            XRBaseInteractor interactor = other.GetComponent<XRBaseInteractor>();
+            if (currentSelectedPetal == null || currentSelectedPetal.Inventory == 0)
+                return;
+
+            // Den XRBaseInteractor suchen (vom Controller)
+            XRBaseInteractor interactor = other.GetComponentInParent<XRBaseInteractor>();
             if (interactor != null)
             {
                 handInteractor = interactor;
-                TrySpawnPetal();
+                StartCoroutine(SpawnAndGrab(interactor));
+
+                //TrySpawnPetalInHand(interactor);
             }
         }
     }
 
-    private void TrySpawnPetal()
+    private IEnumerator SpawnAndGrab(XRBaseInteractor interactor)
     {
-        if (currentSelectedPetal.petalPrefab == null || handInteractor == null) return;
+        if (currentSelectedPetal.petalPrefab == null)
+            yield break;
 
-        GameObject petalInstance = Instantiate(currentSelectedPetal.petalPrefab, spawnPoint.position, spawnPoint.rotation);
+        Vector3 spawnPos = interactor.transform.position;
+        Quaternion spawnRot = interactor.transform.rotation;
+
+        GameObject petalInstance = Instantiate(currentSelectedPetal.petalPrefab, spawnPos, spawnRot);
+        Debug.Log("Petal wurde instanziert");
+
+        yield return null; // 1 Frame warten
 
         XRGrabInteractable interactable = petalInstance.GetComponent<XRGrabInteractable>();
         if (interactable != null)
         {
-            // Objekt direkt ins Hand geben
-            interactionManager.SelectEnter(handInteractor, interactable); // Achtung: Kann deprecated sein
+            interactionManager.SelectEnter(interactor, interactable);
         }
 
-        // Inventar reduzieren, falls notwendig
-        FlowerInventory.Instance.AddPetals(currentSelectedPetal, -1);
+        FlowerInventory.Instance.RemovePetal(currentSelectedPetal, -1);
     }
 
-    [SerializeField] private XRInteractionManager interactionManager;
-    */
+
+    /*
+    private void TrySpawnPetalInHand(XRBaseInteractor interactor)
+    {
+        if (currentSelectedPetal.petalPrefab == null)
+            return;
+
+        // Spawnposition = aktuelle Position des Interactors (Controller-Hand)
+        Vector3 spawnPos = interactor.transform.position;
+        Quaternion spawnRot = interactor.transform.rotation;
+
+        GameObject petalInstance = Instantiate(currentSelectedPetal.petalPrefab, spawnPos, spawnRot);
+
+        // Stelle sicher, dass das Petal greifbar ist
+        XRGrabInteractable interactable = petalInstance.GetComponent<XRGrabInteractable>();
+        if (interactable != null)
+        {
+            interactionManager.SelectEnter(interactor, interactable);
+        }
+
+        // Aus dem Inventar abziehen
+        FlowerInventory.Instance.RemovePetal(currentSelectedPetal, -1);
+    }*/
 }

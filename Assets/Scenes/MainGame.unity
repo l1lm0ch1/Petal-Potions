@@ -1200,7 +1200,8 @@ GameObject:
   - component: {fileID: 94616695}
   - component: {fileID: 94616694}
   - component: {fileID: 94616693}
-  m_Layer: 0
+  - component: {fileID: 94616697}
+  m_Layer: 5
   m_Name: Fire Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1286,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 94616695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819734730}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &94616695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,6 +1337,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94616691}
   m_CullTransparentMesh: 1
+--- !u!114 &94616697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94616691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: cc721f94f101fc04ab4f90f0174dfc31, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!4 &98352887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5706971861855346494, guid: 5d6de89a73c86cc4c8c237fb84f979b6,
@@ -3124,6 +3151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c080589859995774d91eb55b30f722a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PetalSelectionUI: {fileID: 2094355752}
 --- !u!4 &238050392
 Transform:
   m_ObjectHideFlags: 0
@@ -3698,8 +3726,8 @@ GameObject:
   - component: {fileID: 263073321}
   - component: {fileID: 263073323}
   - component: {fileID: 263073322}
-  m_Layer: 0
-  m_Name: Text (TMP)
+  m_Layer: 5
+  m_Name: Grief Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3924,7 +3952,8 @@ GameObject:
   - component: {fileID: 270442497}
   - component: {fileID: 270442496}
   - component: {fileID: 270442495}
-  m_Layer: 0
+  - component: {fileID: 270442499}
+  m_Layer: 5
   m_Name: Grief Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4048,6 +4077,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270442493}
   m_CullTransparentMesh: 1
+--- !u!114 &270442499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270442493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1001 &277054436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5438,7 +5481,7 @@ GameObject:
   - component: {fileID: 378356697}
   m_Layer: 0
   m_Name: Left ray
-  m_TagString: Controller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6097,8 +6140,8 @@ GameObject:
   - component: {fileID: 383469502}
   - component: {fileID: 383469504}
   - component: {fileID: 383469503}
-  m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Layer: 5
+  m_Name: Iridescent Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9422,7 +9465,7 @@ GameObject:
   - component: {fileID: 599338897}
   - component: {fileID: 599338896}
   - component: {fileID: 599338895}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Inferno Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9540,7 +9583,7 @@ GameObject:
   - component: {fileID: 603353087}
   - component: {fileID: 603353086}
   - component: {fileID: 603353085}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fate Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9700,7 +9743,7 @@ GameObject:
   - component: {fileID: 608341655}
   - component: {fileID: 608341654}
   - component: {fileID: 608341653}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Vengence Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9943,8 +9986,8 @@ GameObject:
   - component: {fileID: 617143581}
   - component: {fileID: 617143583}
   - component: {fileID: 617143582}
-  m_Layer: 0
-  m_Name: Text (TMP) (2)
+  m_Layer: 5
+  m_Name: Water Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10365,7 +10408,8 @@ GameObject:
   - component: {fileID: 646015487}
   - component: {fileID: 646015486}
   - component: {fileID: 646015485}
-  m_Layer: 0
+  - component: {fileID: 646015489}
+  m_Layer: 5
   m_Name: Iridescent Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10489,6 +10533,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646015483}
   m_CullTransparentMesh: 1
+--- !u!114 &646015489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646015483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: 82ca7963b6e40ad418b0060a000cfea4, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1001 &648312264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11023,7 +11081,7 @@ GameObject:
   - component: {fileID: 675697535}
   - component: {fileID: 675697534}
   - component: {fileID: 675697533}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Comet Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11100,7 +11158,8 @@ GameObject:
   - component: {fileID: 680978243}
   - component: {fileID: 680978242}
   - component: {fileID: 680978241}
-  m_Layer: 0
+  - component: {fileID: 680978245}
+  m_Layer: 5
   m_Name: Water Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11224,6 +11283,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680978239}
   m_CullTransparentMesh: 1
+--- !u!114 &680978245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680978239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1001 &684737284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11872,7 +11945,7 @@ GameObject:
   - component: {fileID: 725901392}
   m_Layer: 0
   m_Name: Right Ray
-  m_TagString: Controller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12887,7 +12960,7 @@ GameObject:
   - component: {fileID: 754561753}
   - component: {fileID: 754561752}
   - component: {fileID: 754561751}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Steam Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13062,7 +13135,7 @@ GameObject:
   - component: {fileID: 773028961}
   - component: {fileID: 773028960}
   - component: {fileID: 773028959}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Balance Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13480,7 +13553,7 @@ GameObject:
   - component: {fileID: 796955732}
   - component: {fileID: 796955731}
   - component: {fileID: 796955730}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14069,7 +14142,7 @@ GameObject:
   - component: {fileID: 822742826}
   - component: {fileID: 822742825}
   - component: {fileID: 822742824}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Infinity Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14318,7 +14391,7 @@ GameObject:
   - component: {fileID: 835999416}
   - component: {fileID: 835999415}
   - component: {fileID: 835999414}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HeartBreak Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14393,7 +14466,7 @@ GameObject:
   - component: {fileID: 836432842}
   - component: {fileID: 836432841}
   - component: {fileID: 836432840}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Life Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15490,8 +15563,8 @@ GameObject:
   - component: {fileID: 904646714}
   - component: {fileID: 904646716}
   - component: {fileID: 904646715}
-  m_Layer: 0
-  m_Name: Text (TMP)
+  m_Layer: 5
+  m_Name: Heart Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16408,7 +16481,7 @@ GameObject:
   - component: {fileID: 954159639}
   - component: {fileID: 954159638}
   - component: {fileID: 954159637}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cosmic Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18796,7 +18869,7 @@ GameObject:
   - component: {fileID: 1163192413}
   - component: {fileID: 1163192412}
   - component: {fileID: 1163192411}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Heart Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19220,8 +19293,8 @@ GameObject:
   - component: {fileID: 1197467608}
   - component: {fileID: 1197467610}
   - component: {fileID: 1197467609}
-  m_Layer: 0
-  m_Name: Text (TMP)
+  m_Layer: 5
+  m_Name: Star Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19622,7 +19695,7 @@ GameObject:
   - component: {fileID: 1230627158}
   - component: {fileID: 1230627157}
   - component: {fileID: 1230627156}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Echo Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20177,7 +20250,8 @@ GameObject:
   - component: {fileID: 1263167514}
   - component: {fileID: 1263167513}
   - component: {fileID: 1263167512}
-  m_Layer: 0
+  - component: {fileID: 1263167516}
+  m_Layer: 5
   m_Name: Star Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20301,6 +20375,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263167510}
   m_CullTransparentMesh: 1
+--- !u!114 &1263167516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263167510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: e050e512b541df94485c4e1fdca3bacf, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1 &1264232632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1901044d9333fa04486b1fc98790fc12,
@@ -20568,7 +20656,7 @@ GameObject:
   - component: {fileID: 1307304796}
   - component: {fileID: 1307304795}
   - component: {fileID: 1307304794}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Prism Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20933,7 +21021,7 @@ GameObject:
   - component: {fileID: 1323673730}
   - component: {fileID: 1323673729}
   - component: {fileID: 1323673728}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21064,7 +21152,7 @@ GameObject:
   - component: {fileID: 1329354010}
   - component: {fileID: 1329354009}
   - component: {fileID: 1329354008}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tears Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21346,7 +21434,7 @@ GameObject:
   - component: {fileID: 1356108812}
   - component: {fileID: 1356108811}
   - component: {fileID: 1356108810}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Mirror Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26326,7 +26414,8 @@ GameObject:
   - component: {fileID: 1374568466}
   - component: {fileID: 1374568465}
   - component: {fileID: 1374568464}
-  m_Layer: 0
+  - component: {fileID: 1374568468}
+  m_Layer: 5
   m_Name: Heart Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26450,6 +26539,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374568462}
   m_CullTransparentMesh: 1
+--- !u!114 &1374568468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374568462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: 8ae3c4d936c60d446be1d7e255fd3dc9, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1 &1393865574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4559177769891864454, guid: df9207da1b95cd24591db4336f5048a5,
@@ -28944,7 +29047,7 @@ GameObject:
   - component: {fileID: 1512793910}
   - component: {fileID: 1512793909}
   - component: {fileID: 1512793908}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Downfall Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37701,7 +37804,7 @@ Transform:
   m_GameObject: {fileID: 1737315929}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.53, y: 0.38, z: 0}
+  m_LocalPosition: {x: 5.613, y: 0, z: 3.364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38000,7 +38103,8 @@ GameObject:
   - component: {fileID: 1765237951}
   - component: {fileID: 1765237950}
   - component: {fileID: 1765237949}
-  m_Layer: 0
+  - component: {fileID: 1765237952}
+  m_Layer: 5
   m_Name: Petal Box UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38030,7 +38134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 69.814, y: 80.238, z: -1.472}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.944, y: 1.52}
+  m_AnchoredPosition: {x: -3.944, y: 1.541}
   m_SizeDelta: {x: 1.6, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765237949
@@ -38096,6 +38200,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1765237952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765237947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &1767847968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38754,7 +38877,8 @@ GameObject:
   - component: {fileID: 1829583946}
   - component: {fileID: 1829583945}
   - component: {fileID: 1829583944}
-  m_Layer: 0
+  - component: {fileID: 1829583948}
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38892,6 +39016,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1829583948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829583942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &1830091434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39416,7 +39559,8 @@ GameObject:
   - component: {fileID: 1844199096}
   - component: {fileID: 1844199095}
   - component: {fileID: 1844199094}
-  m_Layer: 0
+  - component: {fileID: 1844199098}
+  m_Layer: 5
   m_Name: Galaxy Petal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39540,6 +39684,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844199092}
   m_CullTransparentMesh: 1
+--- !u!114 &1844199098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844199092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PetalData: {fileID: 11400000, guid: 6054fd772e7c39f4aa42d8ec00ed282d, type: 2}
+  selectionUI: {fileID: 2094355752}
 --- !u!1 &1860554142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8877191835845063161, guid: 6dda4458ab9ba4a4092b86abe825aa80,
@@ -39696,8 +39854,8 @@ GameObject:
   - component: {fileID: 1878409506}
   - component: {fileID: 1878409508}
   - component: {fileID: 1878409507}
-  m_Layer: 0
-  m_Name: Text (TMP) (3)
+  m_Layer: 5
+  m_Name: Fire Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40387,6 +40545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206e63263543234dbb135ac8626686d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pouchVisual: {fileID: 0}
+  interactionManager: {fileID: 0}
 --- !u!114 &1898298197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40800,7 +40960,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8b40148cfdae58b4a8473670fd426e98,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.515
+      value: -2.183
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b40148cfdae58b4a8473670fd426e98,
         type: 3}
@@ -40810,7 +40970,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8b40148cfdae58b4a8473670fd426e98,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.109
+      value: 0.443
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b40148cfdae58b4a8473670fd426e98,
         type: 3}
@@ -40851,6 +41011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b40148cfdae58b4a8473670fd426e98,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41583,8 +41748,8 @@ GameObject:
   - component: {fileID: 1966359622}
   - component: {fileID: 1966359624}
   - component: {fileID: 1966359623}
-  m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Layer: 5
+  m_Name: Galaxy Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41859,6 +42024,168 @@ Transform:
   - {fileID: 2103012943}
   m_Father: {fileID: 1580971938}
   m_LocalEulerAnglesHint: {x: 3.457, y: 0, z: 0}
+--- !u!1 &1990143329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990143335}
+  - component: {fileID: 1990143334}
+  - component: {fileID: 1990143333}
+  - component: {fileID: 1990143332}
+  - component: {fileID: 1990143331}
+  - component: {fileID: 1990143330}
+  - component: {fileID: 1990143336}
+  m_Layer: 0
+  m_Name: PetalPouch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1990143330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e63263543234dbb135ac8626686d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pouchVisual: {fileID: 1990143331}
+  interactionManager: {fileID: 2142130667}
+--- !u!114 &1990143331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415f64a2201f0eb42af895fd9f72d1ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pouchRenderer: {fileID: 1990143333}
+--- !u!65 &1990143332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1990143333
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1990143334
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1990143335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.628, y: 0.966, z: 1.314}
+  m_LocalScale: {x: 0.59341, y: 0.59341, z: 0.59341}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1990143336
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990143329}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1998139305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43118,7 +43445,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 68741b874badb744cb931fe6e9c802f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.332
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68741b874badb744cb931fe6e9c802f8,
         type: 3}
@@ -43128,7 +43455,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 68741b874badb744cb931fe6e9c802f8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.334
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68741b874badb744cb931fe6e9c802f8,
         type: 3}
@@ -43200,6 +43527,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: petalsbox
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68741b874badb744cb931fe6e9c802f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014503084441653313, guid: 68741b874badb744cb931fe6e9c802f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 68741b874badb744cb931fe6e9c802f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -43257,6 +43599,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202d5f5509e78bb498e64c0ba4e0e4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entries:
+  - petalData: {fileID: 11400000, guid: 8ae3c4d936c60d446be1d7e255fd3dc9, type: 2}
+    countText: {fileID: 904646715}
+  - petalData: {fileID: 11400000, guid: e050e512b541df94485c4e1fdca3bacf, type: 2}
+    countText: {fileID: 1197467609}
+  - petalData: {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
+    countText: {fileID: 263073322}
+  - petalData: {fileID: 11400000, guid: 6054fd772e7c39f4aa42d8ec00ed282d, type: 2}
+    countText: {fileID: 1966359623}
+  - petalData: {fileID: 11400000, guid: 82ca7963b6e40ad418b0060a000cfea4, type: 2}
+    countText: {fileID: 383469503}
+  - petalData: {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
+    countText: {fileID: 617143582}
+  - petalData: {fileID: 11400000, guid: cc721f94f101fc04ab4f90f0174dfc31, type: 2}
+    countText: {fileID: 1878409507}
+  pouch: {fileID: 1990143330}
 --- !u!1001 &2096198028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43552,7 +43910,7 @@ GameObject:
   - component: {fileID: 2104353377}
   - component: {fileID: 2104353376}
   - component: {fileID: 2104353375}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Novae Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43987,3 +44345,4 @@ SceneRoots:
   - {fileID: 752195665}
   - {fileID: 1904431825}
   - {fileID: 1469567147}
+  - {fileID: 1990143335}

@@ -106,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Flower
       objectReference: {fileID: 0}
     - target: {fileID: 6811576967503348305, guid: 4b25b4d0b537a0241ab8b1605f998c6f,
         type: 3}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerData: {fileID: 11400000, guid: 3b76d8f019230584d83f462ab05a1a56, type: 2}
   petalData: {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
-  growthSpeed: 0.5
+  growthSpeed: 5
   worldCanvas: {fileID: 0}
   growthSlider: {fileID: 0}
   targetScale: {x: 1, y: 1, z: 1}
@@ -224,7 +224,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 16
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1

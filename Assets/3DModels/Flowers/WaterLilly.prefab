@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerData: {fileID: 11400000, guid: cae98dff1558ca347aaf77b76dca166b, type: 2}
   petalData: {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
-  growthSpeed: 0.5
+  growthSpeed: 5
   worldCanvas: {fileID: 0}
   growthSlider: {fileID: 0}
   targetScale: {x: 1, y: 1, z: 1}
@@ -214,7 +214,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 16
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1

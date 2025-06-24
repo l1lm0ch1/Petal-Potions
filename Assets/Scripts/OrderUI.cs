@@ -37,6 +37,6 @@ public class OrderUI : MonoBehaviour
         }
 
         // Belohnungstext setzen
-        rewardText.text = $"Reward: {order.reward} Starshards";
+        rewardText.text = $"Reward: {order.reward}";
     }
 }

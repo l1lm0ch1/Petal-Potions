@@ -12,8 +12,19 @@ public class FlowerInteraction : MonoBehaviour
     {
         interactable = GetComponent<XRBaseInteractable>();
 
+        // Deaktivieren, bis Pflück-Zeit
+        interactable.enabled = false;
+
         // Registriere das Event, wenn der Trigger gedrückt wird
         interactable.selectEntered.AddListener(OnSelectEntered);
+    }
+
+    private void Update()
+    {
+        if(!interactable.enabled && growthScript.getFlowerGrowth())
+        {
+            interactable.enabled = true;
+        }
     }
 
     void OnDestroy()

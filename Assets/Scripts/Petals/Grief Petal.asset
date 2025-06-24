@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petalName: Grief Petal
   icon: {fileID: 21300000, guid: d84cfde4226ab6e4bbdebae20fd7814a, type: 3}
-  value: 0
-  petalPrefab: {fileID: 0}
+  basePrice: 0
+  petalPrefab: {fileID: 2545872506833818721, guid: bc739403bac702644a76e05473e9f4b6,
+    type: 3}
   petalID: Grief
+  Inventory: 0

@@ -8,16 +8,31 @@ public class PetalPouch : MonoBehaviour
     public void UpdatePouchVisual(PetalData newPetal)
     {
         currentPetal = newPetal;
-        pouchRenderer.material.color = newPetal.icon != null ? AverageColorFromTexture(newPetal.icon.texture) : Color.white;
+        pouchRenderer.material.color = newPetal.icon != null ? AverageColorFromSprite(newPetal.icon) : Color.white;
     }
 
-    Color AverageColorFromTexture(Texture2D tex)
+    Color AverageColorFromSprite(Sprite sprite)
     {
-        Color[] pixels = tex.GetPixels();
-        Color avg = new Color(0, 0, 0);
-        foreach (var p in pixels) avg += p;
+        // Hole die Textur, auf der das Sprite basiert
+        Texture2D tex = sprite.texture;
+
+        // Bestimme den Bereich des Sprites auf der Textur (in Pixeln)
+        Rect rect = sprite.textureRect;
+
+        // Hole alle Pixel im Sprite-Bereich
+        Color[] pixels = tex.GetPixels(
+            (int)rect.x,
+            (int)rect.y,
+            (int)rect.width,
+            (int)rect.height);
+
+        Color avg = new Color(0, 0, 0, 0);
+        foreach (var p in pixels)
+            avg += p;
+
         return avg / pixels.Length;
     }
+
 
     public PetalData GetSelectedPetal() => currentPetal;
 }

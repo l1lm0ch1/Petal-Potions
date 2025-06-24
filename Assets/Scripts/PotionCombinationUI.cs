@@ -17,10 +17,8 @@ public class PotionCombinationUI : MonoBehaviour
         if (PotionCombinations.Count == 0) return;
 
         currentIndex--;
-        if(currentIndex > 0)
-        {
+        if (currentIndex < 0)
             currentIndex = PotionCombinations.Count - 1;
-        }
 
         UpdateUI();
     }
@@ -30,10 +28,8 @@ public class PotionCombinationUI : MonoBehaviour
         if (PotionCombinations.Count == 0) return;
 
         currentIndex++;
-        if(currentIndex >= PotionCombinations.Count)
-        {
+        if (currentIndex >= PotionCombinations.Count)
             currentIndex = 0;
-        }
 
         UpdateUI();
     }

@@ -9,4 +9,5 @@ public class SeedData : ScriptableObject
     public GameObject seedVisualPrefab;
     public Color bagColor;
     public string flowerName;
+    public int Inventory;
 }

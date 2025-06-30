@@ -492,8 +492,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: -1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -653,7 +653,7 @@ MonoBehaviour:
     We\u2019d love to hear your feedback.\n\nStay magical!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_text: ':'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

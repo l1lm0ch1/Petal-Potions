@@ -4,8 +4,9 @@ using UnityEngine;
 public class SeedInventory : MonoBehaviour
 {
     public static SeedInventory Instance;
-    public SeedSelectionUI SeedSelectionUI;
+    private SeedSelectionUI SeedSelectionUI;
     private Dictionary<SeedData, int> seedCounts = new();
+    public event System.Action OnInventoryChanged;
 
     void Awake()
     {
@@ -25,7 +26,7 @@ public class SeedInventory : MonoBehaviour
 
         Debug.Log("Ein Seed abgezogen");
         Debug.Log("Seeds gezählt: " + seed.seedName + " / " + seedCounts[seed]);
-        SeedSelectionUI.UpdateUI();
+        FindObjectOfType<SeedSelectionUI>()?.UpdateUI();
     }
 
     public void AddSeed(SeedData seed, int amount)
@@ -34,7 +35,8 @@ public class SeedInventory : MonoBehaviour
             seedCounts[seed] = 0;
 
         seedCounts[seed] += amount;
-        SeedSelectionUI.UpdateUI();
+        FindObjectOfType<SeedSelectionUI>()?.UpdateUI();
+
         Debug.Log("Ein Seed hinzugefügt");
     }
 

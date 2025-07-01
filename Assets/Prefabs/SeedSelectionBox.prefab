@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 4707376680734474293}
   - component: {fileID: 8175491162208656959}
   - component: {fileID: 2699615121247615573}
-  - component: {fileID: 1512835858710438836}
-  - component: {fileID: 3143981939076518873}
   m_Layer: 5
   m_Name: Water Seed
   m_TagString: Untagged
@@ -123,35 +121,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1512835858710438836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331819497002181080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
-  countText: {fileID: 808526231128058299}
-  iconImage: {fileID: 8175491162208656959}
---- !u!114 &3143981939076518873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331819497002181080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &2275604902221619374
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +269,6 @@ GameObject:
   - component: {fileID: 6992389928450633169}
   - component: {fileID: 2965222573294705087}
   - component: {fileID: 9203311736222035520}
-  - component: {fileID: 6284885948195746689}
-  - component: {fileID: 2798391099860356052}
   m_Layer: 5
   m_Name: Galaxy Seed
   m_TagString: Untagged
@@ -411,35 +378,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6284885948195746689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298315309081970098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: 6054fd772e7c39f4aa42d8ec00ed282d, type: 2}
-  countText: {fileID: 7494025389726013991}
-  iconImage: {fileID: 2965222573294705087}
---- !u!114 &2798391099860356052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298315309081970098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: 6054fd772e7c39f4aa42d8ec00ed282d, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &2488648493591813516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,8 +1008,6 @@ GameObject:
   - component: {fileID: 5488939397699109517}
   - component: {fileID: 6727057624328166333}
   - component: {fileID: 4082000712572553078}
-  - component: {fileID: 5359566015460695591}
-  - component: {fileID: 2059707014474273934}
   m_Layer: 5
   m_Name: Grief Seed
   m_TagString: Untagged
@@ -1181,35 +1117,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5359566015460695591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4230687947513054079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
-  countText: {fileID: 207875815051172808}
-  iconImage: {fileID: 6727057624328166333}
---- !u!114 &2059707014474273934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4230687947513054079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &5375399584968162108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,8 +1349,6 @@ GameObject:
   - component: {fileID: 2553802806348965982}
   - component: {fileID: 7704739551064911992}
   - component: {fileID: 8684204476080618275}
-  - component: {fileID: 5087250086642417691}
-  - component: {fileID: 4815822479639587613}
   m_Layer: 5
   m_Name: Star Seed
   m_TagString: Untagged
@@ -1553,35 +1458,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5087250086642417691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6607283784497369095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: e050e512b541df94485c4e1fdca3bacf, type: 2}
-  countText: {fileID: 8517283415541818046}
-  iconImage: {fileID: 7704739551064911992}
---- !u!114 &4815822479639587613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6607283784497369095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: e050e512b541df94485c4e1fdca3bacf, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &7140704097322207839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,8 +1606,6 @@ GameObject:
   - component: {fileID: 1728736549680005387}
   - component: {fileID: 5548021054364097639}
   - component: {fileID: 7917515374199463910}
-  - component: {fileID: 1054412353975648868}
-  - component: {fileID: 7303391045605891412}
   m_Layer: 5
   m_Name: Fire Seed
   m_TagString: Untagged
@@ -1853,35 +1727,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1054412353975648868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658894250397869498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: cc721f94f101fc04ab4f90f0174dfc31, type: 2}
-  countText: {fileID: 7492773578812839148}
-  iconImage: {fileID: 5548021054364097639}
---- !u!114 &7303391045605891412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658894250397869498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: cc721f94f101fc04ab4f90f0174dfc31, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &7827972050383200056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,8 +1739,6 @@ GameObject:
   - component: {fileID: 3902133098708471683}
   - component: {fileID: 1093291370218824844}
   - component: {fileID: 7099903342483430333}
-  - component: {fileID: 8224363520962774272}
-  - component: {fileID: 7427282447356474852}
   m_Layer: 5
   m_Name: Heart Seed
   m_TagString: Untagged
@@ -2005,35 +1848,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8224363520962774272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7827972050383200056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: 8ae3c4d936c60d446be1d7e255fd3dc9, type: 2}
-  countText: {fileID: 2946057963675055628}
-  iconImage: {fileID: 1093291370218824844}
---- !u!114 &7427282447356474852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7827972050383200056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: 8ae3c4d936c60d446be1d7e255fd3dc9, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &7858154717158797006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,8 +1860,6 @@ GameObject:
   - component: {fileID: 6386679574316070904}
   - component: {fileID: 6958243590383132449}
   - component: {fileID: 1251953262143390975}
-  - component: {fileID: 4371499563119344338}
-  - component: {fileID: 7824458400532298532}
   m_Layer: 5
   m_Name: Iridescent Seed
   m_TagString: Untagged
@@ -2157,35 +1969,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4371499563119344338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7858154717158797006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6829c75dcd7ca4caf49e291722c6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalType: {fileID: 11400000, guid: 82ca7963b6e40ad418b0060a000cfea4, type: 2}
-  countText: {fileID: 6496907865929811278}
-  iconImage: {fileID: 6958243590383132449}
---- !u!114 &7824458400532298532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7858154717158797006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9312c3f94cc4ff7488593a5da1085921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PetalData: {fileID: 11400000, guid: 82ca7963b6e40ad418b0060a000cfea4, type: 2}
-  selectionUI: {fileID: 0}
 --- !u!1 &7878266016914054691
 GameObject:
   m_ObjectHideFlags: 0

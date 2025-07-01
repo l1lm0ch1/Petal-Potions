@@ -5,39 +5,32 @@ using UnityEngine.UI;
 
 public class PetalSelectionUI : MonoBehaviour
 {
-    [System.Serializable]
-    public class PetalUIEntry
+    public PetalPouchController pouch;
+
+    private PetalSelectButton[] allButtons;
+
+    private void Start()
     {
-        public PetalData petalData;   // Referenz auf das Petal
-        public TMP_Text countText;    // Text UI
-    }
-
-    [Header("Alle UI-Einträge")]
-    public List<PetalUIEntry> entries = new();
-
-    [Header("Pouch Referenz")]
-    public PetalPouchController pouch; // Referenz zur Pouch
-
-
-    void Start()
-    {
+        allButtons = GetComponentsInChildren<PetalSelectButton>(true);
         UpdateUI();
     }
 
     public void UpdateUI()
     {
-        foreach (var entry in entries)
+        if (allButtons == null)
+            allButtons = GetComponentsInChildren<PetalSelectButton>(true);
+
+        foreach (var button in allButtons)
         {
-            if (entry.petalData != null)
-            {
-                int count = FlowerInventory.Instance.GetPetalCount(entry.petalData);
-                entry.countText.text = count.ToString();
-            }
+            button.UpdateCount();
         }
     }
 
     public void SelectPetal(PetalData selectedPetal)
     {
-        pouch.SetSelectedPetal(selectedPetal);
+        if(pouch != null)
+        {
+            pouch.SetSelectedPetal(selectedPetal);
+        }
     }
 }

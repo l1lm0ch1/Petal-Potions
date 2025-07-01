@@ -1,42 +1,33 @@
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class SeedSelectionUI : MonoBehaviour
 {
-    [System.Serializable]
-    public class SeedUIEntry
+    public SeedPouchController pouch;
+
+    private SeedSelectButton[] allButtons;
+
+    private void Start()
     {
-        public SeedData seedData;
-        public TMP_Text countText;
-    }
-
-    [Header("Alle UI-Einträge")]
-    public List<SeedUIEntry> entries = new();
-
-    [Header("Pouch Referenz")]
-    public SeedPouchController pouch; // Referenz zur Pouch
-
-
-    void Start()
-    {
+        allButtons = GetComponentsInChildren<SeedSelectButton>(true);
         UpdateUI();
     }
 
     public void UpdateUI()
     {
-        foreach (var entry in entries)
+        if (allButtons == null)
+            allButtons = GetComponentsInChildren<SeedSelectButton>(true);
+
+        foreach (var button in allButtons)
         {
-            if (entry.seedData != null)
-            {
-                int count = SeedInventory.Instance.GetSeedCount(entry.seedData);
-                entry.countText.text = count.ToString();
-            }
+            button.UpdateCount();
         }
     }
 
     public void SelectSeed(SeedData selectedSeed)
     {
-        pouch.SetSelectedSeed(selectedSeed);
+        if (pouch != null)
+        {
+            pouch.SetSelectedSeed(selectedSeed);
+        }
     }
 }

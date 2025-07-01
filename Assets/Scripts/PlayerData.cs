@@ -5,7 +5,7 @@ public class PlayerData : MonoBehaviour
 {
     public static PlayerData Instance;
 
-    private int starshards = 100; // Startwert
+    private int starshards = 400; // Startwert
 
     public int Starshards
     {
@@ -28,7 +28,7 @@ public class PlayerData : MonoBehaviour
         else Destroy(gameObject);
 
         // Kein PlayerPrefs mehr – einfach mit default-Wert starten
-        starshards = 100;
+        starshards = 400;
     }
 
     public bool TryPurchase(int price)

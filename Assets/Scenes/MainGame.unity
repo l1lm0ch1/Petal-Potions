@@ -8215,7 +8215,7 @@ Transform:
   m_GameObject: {fileID: 449475410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7919931, y: 0.127, z: 0.3899998}
+  m_LocalPosition: {x: -1.7919931, y: 0.044, z: 0.3899998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15686,14 +15686,6 @@ MonoBehaviour:
   maxAmountPerItem: 5
   minReward: 10
   maxReward: 50
-  allPetals:
-  - {fileID: 11400000, guid: cc721f94f101fc04ab4f90f0174dfc31, type: 2}
-  - {fileID: 11400000, guid: 6054fd772e7c39f4aa42d8ec00ed282d, type: 2}
-  - {fileID: 11400000, guid: 822d374c4f875514ea76e82fb6fa9774, type: 2}
-  - {fileID: 11400000, guid: 8ae3c4d936c60d446be1d7e255fd3dc9, type: 2}
-  - {fileID: 11400000, guid: 82ca7963b6e40ad418b0060a000cfea4, type: 2}
-  - {fileID: 11400000, guid: e050e512b541df94485c4e1fdca3bacf, type: 2}
-  - {fileID: 11400000, guid: 2a019b9e68f61e2438e5fea6f90e2576, type: 2}
   allPotions:
   - {fileID: 11400000, guid: 8bf13660e6689e346a98a4abdb53b2d1, type: 2}
   - {fileID: 11400000, guid: 5854214bdb641f14eabdb280243067bf, type: 2}
@@ -17981,10 +17973,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failedPotion: {fileID: 1363010482}
   createdPotion: {fileID: 1587680400}
-  spawnPoint: {fileID: 294453834}
-  potionCombinations: []
   potionSuccess: {fileID: 0}
   potionFailure: {fileID: 0}
+  spawnPoint: {fileID: 294453834}
+  potionCombinations: []
+  allPetalIDs: []
 --- !u!65 &988007713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42277,74 +42270,98 @@ MonoBehaviour:
   failedPotion: {fileID: 6855314210357232282, guid: 7c2a9b83b809a0848915fabd9596b68b,
     type: 3}
   createdPotion: {fileID: 605868548}
+  potionSuccess: {fileID: 1881623657}
+  potionFailure: {fileID: 1881623656}
   spawnPoint: {fileID: 449475411}
   potionCombinations:
   - petal1: Heart
     petal2: Water
     potionPrefab: {fileID: 7299806298284992505, guid: 8a377006e69c803409d5cd3b4494d3e4,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Heart
     petal2: Fire
     potionPrefab: {fileID: 4391240419337625801, guid: 4fd564c2a28b6634caab21f8b719de6b,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Heart
     petal2: Galaxy
     potionPrefab: {fileID: 5872377921075939702, guid: b9105fadc9868c24d81f257c0361bccc,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Heart
     petal2: Grief
     potionPrefab: {fileID: 5480682430680336602, guid: e46586a4e79e2684d86290e192136092,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Water
     petal2: Fire
     potionPrefab: {fileID: 728216094738292850, guid: 6cade6ebd3e7b5540a5f4a156f92f3b5,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Water
     petal2: Iridescent
     potionPrefab: {fileID: 7711208658253778944, guid: 892413f8a6af3924cb261b8475ef976d,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Water
     petal2: Galaxy
     potionPrefab: {fileID: 2400601258888481590, guid: 211c73184d12dcd4ca446b2aa20fb6c5,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Water
     petal2: Grief
     potionPrefab: {fileID: 5650019081558929624, guid: b0d23bef9af576948b97539833029990,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Fire
     petal2: Galaxy
     potionPrefab: {fileID: 5095116402814845362, guid: b96046eee5610154db7bc287e20b7d26,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Fire
     petal2: Star
     potionPrefab: {fileID: 3890153867862859077, guid: 520357ddf0444ba4c84b4815497cd2e9,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Fire
     petal2: Grief
     potionPrefab: {fileID: 8493029652505763577, guid: 93e00c254b035af44a2306f0778f4cf4,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Iridescent
     petal2: Galaxy
     potionPrefab: {fileID: 6796958822129247924, guid: d10486e21e343044b9dec8a9ad8b7c44,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Iridescent
     petal2: Star
     potionPrefab: {fileID: 278310836632328891, guid: e7be47c7f81edcb46b0adc41cb060655,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Galaxy
     petal2: Star
     potionPrefab: {fileID: 1682473266196708427, guid: 9ced558b1475b144892865cdac2b1b64,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Galaxy
     petal2: Grief
     potionPrefab: {fileID: 1751852020855295297, guid: 664f8756eadf19a45bddd42bdbe4be4b,
       type: 3}
+    requiresAllPetals: 0
   - petal1: Star
     petal2: Grief
     potionPrefab: {fileID: 1895334925515109366, guid: 28523f81f7def034dbcdcef81234ad20,
       type: 3}
-  potionSuccess: {fileID: 1881623657}
-  potionFailure: {fileID: 1881623656}
+    requiresAllPetals: 0
+  allPetalIDs:
+  - Heart
+  - Water
+  - Fire
+  - Grief
+  - Star
+  - Galaxy
+  - Iridescent
 --- !u!82 &1881623656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44444,6 +44461,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1996245317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996245319}
+  - component: {fileID: 1996245318}
+  m_Layer: 0
+  m_Name: PotionTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1996245318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996245317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa16a92c23be4024398340bb7f7cb5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1996245319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996245317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.583172, y: 0.35891885, z: 2.4641695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1998139305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47328,6 +47389,7 @@ SceneRoots:
   - {fileID: 543326348}
   - {fileID: 238050392}
   - {fileID: 1631372439}
+  - {fileID: 1996245319}
   - {fileID: 1585612419}
   - {fileID: 2142130668}
   - {fileID: 1737315932}

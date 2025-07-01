@@ -11,12 +11,12 @@ public class SeedPouchController : MonoBehaviour
     public XRInteractionManager interactionManager;
 
     private SeedData currentSelectedSeed;
-    private XRBaseInteractor handInteractor;
+    private XRDirectInteractor handInteractor;
 
-    public void SetSelectedPetal(SeedData seed)
+    public void SetSelectedSeed(SeedData seed)
     {
         currentSelectedSeed = seed;
-        Debug.Log("Ausgewähltes Petal: " + seed.seedName);
+        Debug.Log("Ausgewähltes Seed: " + seed.seedName);
 
         if (pouchVisual != null)
         {
@@ -28,24 +28,20 @@ public class SeedPouchController : MonoBehaviour
     {
         if (other.tag == "Controller")
         {
-            Debug.Log("Hand in Pouch");
-
-            if (currentSelectedSeed == null || currentSelectedSeed.Inventory == 0)
+            int count = SeedInventory.Instance.GetSeedCount(currentSelectedSeed);
+            if (currentSelectedSeed == null || count == 0)
                 return;
-
-            // Den XRBaseInteractor suchen (vom Controller)
-            XRBaseInteractor interactor = other.GetComponentInParent<XRBaseInteractor>();
+                
+            XRDirectInteractor interactor = other.GetComponent<XRDirectInteractor>();
             if (interactor != null)
             {
                 handInteractor = interactor;
                 StartCoroutine(SpawnAndGrab(interactor));
-
-                //TrySpawnPetalInHand(interactor);
             }
         }
     }
 
-    private IEnumerator SpawnAndGrab(XRBaseInteractor interactor)
+    private IEnumerator SpawnAndGrab(XRDirectInteractor interactor)
     {
         if (currentSelectedSeed.seedVisualPrefab == null)
             yield break;
@@ -53,17 +49,16 @@ public class SeedPouchController : MonoBehaviour
         Vector3 spawnPos = interactor.transform.position;
         Quaternion spawnRot = interactor.transform.rotation;
 
-        GameObject petalInstance = Instantiate(currentSelectedSeed.seedVisualPrefab, spawnPos, spawnRot);
-        Debug.Log("Petal wurde instanziert");
+        GameObject seedInstance = Instantiate(currentSelectedSeed.seedVisualPrefab, spawnPos, spawnRot);
 
-        yield return null; // 1 Frame warten
+        //yield return null; // 1 Frame warten
 
-        XRGrabInteractable interactable = petalInstance.GetComponent<XRGrabInteractable>();
+        XRGrabInteractable interactable = seedInstance.GetComponent<XRGrabInteractable>();
         if (interactable != null)
         {
             interactionManager.SelectEnter(interactor, interactable);
         }
 
-        SeedInventory.Instance.RemoveSeed(currentSelectedSeed, -1);
+        SeedInventory.Instance.RemoveSeed(currentSelectedSeed, 1);
     }
 }

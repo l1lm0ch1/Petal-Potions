@@ -68,7 +68,7 @@ MonoBehaviour:
   m_text: Galaxy Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_text: Water Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -419,9 +419,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2663780429273214438}
   - {fileID: 8664816383470751212}
   - {fileID: 1123959246664674208}
+  - {fileID: 2663780429273214438}
   m_Father: {fileID: 5704264621843432429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -574,7 +574,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -944,9 +944,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3580332254715206799}
   - {fileID: 997517693688590434}
   - {fileID: 6664355983437584548}
+  - {fileID: 3580332254715206799}
   m_Father: {fileID: 5704264621843432429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1174,7 +1174,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1404,9 +1404,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9016598323671229517}
   - {fileID: 4639940760925644207}
   - {fileID: 2423315763242638902}
+  - {fileID: 9016598323671229517}
   m_Father: {fileID: 5704264621843432429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_text: Fire Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1738,7 +1738,7 @@ MonoBehaviour:
   m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_text: 15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2617,7 +2617,7 @@ MonoBehaviour:
   m_text: Iridecent Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2873,7 +2873,7 @@ MonoBehaviour:
   m_text: Heart Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_text: 104
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3294,7 +3294,7 @@ MonoBehaviour:
   m_text: Grief Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3429,7 +3429,7 @@ MonoBehaviour:
   m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3639,7 +3639,7 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4003,7 +4003,7 @@ MonoBehaviour:
   m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4138,7 +4138,7 @@ MonoBehaviour:
   m_text: Star Seeds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
-  m_sharedMaterial: {fileID: 7460221852014408232, guid: 9fa10777093fa7047ab6b36985b2801e,
+  m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

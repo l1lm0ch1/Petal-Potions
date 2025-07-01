@@ -15,7 +15,9 @@ MonoBehaviour:
   seedName: Iridescent
   icon: {fileID: 21300000, guid: cad3377cff1aa3b489cbe8d0f26a2443, type: 3}
   flowerData: {fileID: 11400000, guid: 13ba23a5c8aab31498befaa3197b8b0a, type: 2}
-  seedVisualPrefab: {fileID: 626839683445316082, guid: 420d0c3e8ee53584a90af2c8bb1155ed,
+  seedVisualPrefab: {fileID: 2366895202912412749, guid: 3cddf64ff73f5aa418dafc52f35961bb,
     type: 3}
   bagColor: {r: 0, g: 1, b: 0.48473144, a: 0}
   flowerName: Iridescent
+  Inventory: 0
+  Price: 30

@@ -10,4 +10,5 @@ public class SeedData : ScriptableObject
     public Color bagColor;
     public string flowerName;
     public int Inventory;
+    public int Price;
 }

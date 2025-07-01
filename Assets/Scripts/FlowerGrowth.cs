@@ -19,6 +19,8 @@ public class FlowerGrowth : MonoBehaviour
     private Vector3 initialScale;
     public Vector3 targetScale = Vector3.one;
 
+    public SeedPlacer seedPlacer;
+
     public bool getFlowerGrowth()
     {
         return isFullyGrown;
@@ -64,6 +66,12 @@ public class FlowerGrowth : MonoBehaviour
             if (flowerData != null)
             {
                 FlowerInventory.Instance.AddPetals(petalData);
+                // Reset Seed Placer Slot here
+                
+                if(seedPlacer != null)
+                {
+                    seedPlacer.ResetSlot();
+                }
             }
             else
             {

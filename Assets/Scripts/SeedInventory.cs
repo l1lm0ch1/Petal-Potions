@@ -4,7 +4,7 @@ using UnityEngine;
 public class SeedInventory : MonoBehaviour
 {
     public static SeedInventory Instance;
-    public PetalSelectionUI PetalSelectionUI;   // TODO: Auf Seed Selection UI umändern
+    public SeedSelectionUI SeedSelectionUI;
     private Dictionary<SeedData, int> seedCounts = new();
 
     void Awake()
@@ -13,29 +13,32 @@ public class SeedInventory : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void AddPetals(SeedData seed)
-    {
-        int randomAmount = Random.Range(3, 6); // random Nummer zw 3 und 5
-
-        if (!seedCounts.ContainsKey(seed))
-            seedCounts[seed] = 0;
-
-        seedCounts[seed] += randomAmount;
-        Debug.Log("Blütenblätter gezählt: " + seed.seedName + " / " + seedCounts[seed] + " (+" + randomAmount + ")");
-        PetalSelectionUI.UpdateUI();
-    }
-
     public void RemoveSeed(SeedData seed, int amount)
     {
         if (!seedCounts.ContainsKey(seed))
             seedCounts[seed] = 0;
 
-        seedCounts[seed] += amount;
-        Debug.Log("Blütenblätter gezählt: " + seed.seedName + " / " + seedCounts[seed]);
-        PetalSelectionUI.UpdateUI();
+        seedCounts[seed] -= amount;
+
+        if (seedCounts[seed] < 0)
+            seedCounts[seed] = 0;
+
+        Debug.Log("Ein Seed abgezogen");
+        Debug.Log("Seeds gezählt: " + seed.seedName + " / " + seedCounts[seed]);
+        SeedSelectionUI.UpdateUI();
     }
 
-    public int GetPetalCount(SeedData seed)
+    public void AddSeed(SeedData seed, int amount)
+    {
+        if (!seedCounts.ContainsKey(seed))
+            seedCounts[seed] = 0;
+
+        seedCounts[seed] += amount;
+        SeedSelectionUI.UpdateUI();
+        Debug.Log("Ein Seed hinzugefügt");
+    }
+
+    public int GetSeedCount(SeedData seed)
     {
         return seedCounts.ContainsKey(seed) ? seedCounts[seed] : 0;
     }

@@ -27,6 +27,7 @@ public class SeedPlacer : MonoBehaviour
         if(growth != null)
         {
             growth.flowerData = data;
+            growth.seedPlacer = this;
             growth.enabled = true;
         }
 

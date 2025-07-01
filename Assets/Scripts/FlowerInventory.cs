@@ -15,7 +15,7 @@ public class FlowerInventory : MonoBehaviour
 
     public void AddPetals(PetalData petal)
     {
-        int randomAmount = Random.Range(3, 6); // random Nummer zw 3 und 5
+        int randomAmount = Random.Range(3, 6);
 
         if (!flowerPetalCounts.ContainsKey(petal))
             flowerPetalCounts[petal] = 0;
@@ -30,7 +30,7 @@ public class FlowerInventory : MonoBehaviour
         if (!flowerPetalCounts.ContainsKey(petal))
             flowerPetalCounts[petal] = 0;
 
-        flowerPetalCounts[petal] += amount;
+        flowerPetalCounts[petal] -= amount;
         Debug.Log("Blütenblätter gezählt: " + petal.petalName + " / " + flowerPetalCounts[petal]);
         PetalSelectionUI.UpdateUI();
     }

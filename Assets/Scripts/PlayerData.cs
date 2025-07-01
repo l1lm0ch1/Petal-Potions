@@ -5,7 +5,8 @@ public class PlayerData : MonoBehaviour
 {
     public static PlayerData Instance;
 
-    private int starshards;
+    private int starshards = 100; // Startwert
+
     public int Starshards
     {
         get { return starshards; }
@@ -14,8 +15,6 @@ public class PlayerData : MonoBehaviour
             if (starshards != value)
             {
                 starshards = value;
-                PlayerPrefs.SetInt("Starshards", starshards);
-                PlayerPrefs.Save();
                 OnStarshardsChanged?.Invoke(starshards); // Event auslösen
             }
         }
@@ -28,7 +27,8 @@ public class PlayerData : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        starshards = PlayerPrefs.GetInt("Starshards", 0);
+        // Kein PlayerPrefs mehr – einfach mit default-Wert starten
+        starshards = 100;
     }
 
     public bool TryPurchase(int price)

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class TutorialUI : MonoBehaviour
     public List<GameObject> TutorialPages = new List<GameObject>();
     public GameObject BackButon;
     public GameObject NextButton;
+    public GameObject CreditsUI;
 
     private int currentIndex = 0;
 
@@ -56,5 +58,17 @@ public class TutorialUI : MonoBehaviour
         {
             TutorialPages[i].SetActive(i == currentIndex);
         }
+    }
+
+    public void PlayCredits()
+    {
+        StartCoroutine(CreditsCoroutine());
+    }
+
+    IEnumerator CreditsCoroutine()
+    {
+        CreditsUI.SetActive(true);
+        yield return new WaitForSeconds(20);
+        CreditsUI.SetActive(false);
     }
 }

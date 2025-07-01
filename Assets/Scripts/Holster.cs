@@ -3,7 +3,7 @@ using UnityEngine;
 public class Holster : MonoBehaviour
 {
     public GameObject centerEyeAnchor;
-    private float rotationspeed = 50;
+    private float rotationspeed = 25;
 
     // Update is called once per frame
     void Update()

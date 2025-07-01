@@ -17,7 +17,7 @@ public class OrderManager : MonoBehaviour
     public int maxReward = 350;
 
     [Header("Available Items")]
-    public List<PotionData> allPotions;
+    //public List<PotionData> allPotions;
 
     private List<OrderData> currentOrders = new();
 
@@ -37,10 +37,10 @@ public class OrderManager : MonoBehaviour
             OrderData order = new OrderData();
             int itemCount = Random.Range(minItemsPerOrder, maxItemsPerOrder + 1);
 
-            //List<PotionData> craftedPotions = Potiontracker.Instance.GetAllCraftedPotions();
+            List<PotionData> craftedPotions = PotionTracker.Instance.GetAllCraftedPotions();        // Hier noch aktualisieren, immer wenn neuer Potion gemacht wird, dann neue Orders
 
             List<ScriptableObject> pool = new();            // Bestellungspool hat nur Potions drinnen, kann später auf Petals erweitert werden (if needed)
-            pool.AddRange(allPotions);
+            pool.AddRange(craftedPotions);
 
             for (int j = 0; j < itemCount; j++)             // random Items für Besetllung
             {

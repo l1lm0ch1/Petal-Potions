@@ -37,6 +37,7 @@ public class FlowerInventory : MonoBehaviour
 
     public int GetPetalCount(PetalData petal)
     {
+        if(petal == null) return 0;
         return flowerPetalCounts.ContainsKey(petal) ? flowerPetalCounts[petal] : 0;
     }
 }

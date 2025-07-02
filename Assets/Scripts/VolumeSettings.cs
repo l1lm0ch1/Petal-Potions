@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
@@ -38,9 +39,15 @@ public class VolumeSettings : MonoBehaviour
 
     public void SetMasterVolume()
     {
+        /*
         float volume = masterSlider.value;
         audioMixer.SetFloat("Music", Mathf.Log10(volume) * 20);
         audioMixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
-        audioMixer.SetFloat("Ambience", Mathf.Log10(volume) * 20);
+        audioMixer.SetFloat("Ambience", Mathf.Log10(volume) * 20);*/
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

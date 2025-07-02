@@ -3,7 +3,12 @@ using UnityEngine;
 
 public class SellBoxTrigger : MonoBehaviour
 {
+    [Header("Shopmanager Reference")]
     public ShopManager shopManager;
+
+    [Header("Order complete Feedback")]
+    public ParticleSystem orderComplete;
+    public AudioSource orderSuccess;
 
     private List<GameObject> insideObjects = new();
 
@@ -32,8 +37,8 @@ public class SellBoxTrigger : MonoBehaviour
             {
                 int countInBox = insideObjects.FindAll(obj =>
                 {
-                    ItemHolder holder = obj.GetComponent<ItemHolder>();
-                    return holder != null && holder.data == item.item;
+                    PotionDataHolder holder = obj.GetComponent<PotionDataHolder>();
+                    return holder != null && holder.potionData == item.item;
                 }).Count;
 
                 if (countInBox < item.amount)
@@ -45,6 +50,9 @@ public class SellBoxTrigger : MonoBehaviour
 
             if (orderFulfilled)
             {
+                orderComplete.Play();
+                orderSuccess.Play();
+
                 Debug.Log("Auftrag erfüllt! Belohnung: " + order.reward);
 
                 // Belohnung geben
@@ -56,8 +64,8 @@ public class SellBoxTrigger : MonoBehaviour
                     int toRemove = item.amount;
                     for (int i = insideObjects.Count - 1; i >= 0 && toRemove > 0; i--)
                     {
-                        ItemHolder holder = insideObjects[i].GetComponent<ItemHolder>();
-                        if (holder != null && holder.data == item.item)
+                        PotionDataHolder holder = insideObjects[i].GetComponent<PotionDataHolder>();
+                        if (holder != null && holder.potionData == item.item)
                         {
                             Destroy(insideObjects[i]);
                             insideObjects.RemoveAt(i);

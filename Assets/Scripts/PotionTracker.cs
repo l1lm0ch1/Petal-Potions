@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ public class PotionTracker : MonoBehaviour
 
     private HashSet<PotionData> craftedPotions = new();
 
+    public event Action<PotionData> OnPotionCrafted;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -15,7 +18,10 @@ public class PotionTracker : MonoBehaviour
 
     public void RegisterCraftedPotion(PotionData potion)
     {
-        craftedPotions.Add(potion);
+        if(craftedPotions.Add(potion))
+        {
+            OnPotionCrafted?.Invoke(potion);
+        }
     }
 
     public bool HasCrafted(PotionData potion)

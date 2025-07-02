@@ -1,117 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6755268920230884391
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      propertyPath: m_Name
-      value: LifePotion
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8035223831812418784}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8953459146979255034}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6987263817045161005}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -7567908512265863249}
-  m_SourcePrefab: {fileID: 100100000, guid: db02415f1f927034a8016fd6b4a5b210, type: 3}
---- !u!1 &5872377921075939702 stripped
+--- !u!1 &7105717155430994283
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db02415f1f927034a8016fd6b4a5b210,
-    type: 3}
-  m_PrefabInstance: {fileID: 6755268920230884391}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &-8035223831812418784
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8188752662090784586}
+  - component: {fileID: 1139100894912833761}
+  - component: {fileID: 6860397683821403451}
+  - component: {fileID: 725530845936269110}
+  - component: {fileID: 3379499184835595256}
+  m_Layer: 0
+  m_Name: Life PotionNEW
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8188752662090784586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105717155430994283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.003, y: -0.872, z: 9.278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 641205172778212338}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139100894912833761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105717155430994283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2c233c5396bf64ba798a911b3ad05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionData: {fileID: 11400000, guid: 51eac28b7a4443e489ee1b6c7036fa49, type: 2}
+--- !u!54 &6860397683821403451
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872377921075939702}
+  m_GameObject: {fileID: 7105717155430994283}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -132,13 +76,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-8953459146979255034
+--- !u!114 &725530845936269110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872377921075939702}
+  m_GameObject: {fileID: 7105717155430994283}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -284,13 +228,13 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!64 &6987263817045161005
+--- !u!64 &3379499184835595256
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872377921075939702}
+  m_GameObject: {fileID: 7105717155430994283}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -306,16 +250,77 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9038888635599626038, guid: db02415f1f927034a8016fd6b4a5b210, type: 3}
---- !u!114 &-7567908512265863249
-MonoBehaviour:
+--- !u!1001 &5968171666993498174
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8188752662090784586}
+    m_Modifications:
+    - target: {fileID: 5872377921075939702, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_Name
+      value: LifePotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00093460083
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22300863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.35972214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9105fadc9868c24d81f257c0361bccc, type: 3}
+--- !u!4 &641205172778212338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6500154653150565324, guid: b9105fadc9868c24d81f257c0361bccc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5968171666993498174}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872377921075939702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2c233c5396bf64ba798a911b3ad05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potionData: {fileID: 11400000, guid: 51eac28b7a4443e489ee1b6c7036fa49, type: 2}

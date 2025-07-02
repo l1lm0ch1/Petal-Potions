@@ -3,7 +3,10 @@ using UnityEngine;
 public class SeedPlacer : MonoBehaviour
 {
     private bool isOccupied = false;
+
+    [Header("Planting Feedback")]
     public ParticleSystem ParticleSystem;
+    public AudioSource plantSeed;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +36,7 @@ public class SeedPlacer : MonoBehaviour
 
         Debug.Log($"Blume '{data.flowerName}' wurde im Slot gepflanzt");
         ParticleSystem.Play();
+        plantSeed.Play();
     }
 
     public void ResetSlot()

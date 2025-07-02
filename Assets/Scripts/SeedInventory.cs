@@ -42,6 +42,7 @@ public class SeedInventory : MonoBehaviour
 
     public int GetSeedCount(SeedData seed)
     {
+        if(seed ==  null) return 0;
         return seedCounts.ContainsKey(seed) ? seedCounts[seed] : 0;
     }
 }

@@ -977,10 +977,10 @@ RectTransform:
   - {fileID: 798967047}
   m_Father: {fileID: 114744462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.16927205}
+  m_AnchorMin: {x: 0.0043470585, y: 0.17817725}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000014781952, y: -0.58557546}
-  m_SizeDelta: {x: 0.000029576477, y: -0.10884903}
+  m_AnchoredPosition: {x: -0.007652283, y: -0.26771224}
+  m_SizeDelta: {x: 0.015304579, y: -0.5354245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31167024
 MonoBehaviour:
@@ -3042,8 +3042,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.19586411}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.62651473}
-  m_SizeDelta: {x: 0, y: -0.026970435}
+  m_AnchoredPosition: {x: 0, y: -0.31999996}
+  m_SizeDelta: {x: 0, y: -0.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168074687
 MonoBehaviour:
@@ -9592,7 +9592,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12105,8 +12105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.16927205}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00008511543, y: -0.58494824}
-  m_SizeDelta: {x: 0.00017026626, y: -0.11010347}
+  m_AnchoredPosition: {x: -0.00008511543, y: -0.32}
+  m_SizeDelta: {x: 0.00017026626, y: -0.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657664125
 MonoBehaviour:
@@ -12841,7 +12841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &704835796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12860,8 +12860,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.16927205}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00014317036, y: -0.5849986}
-  m_SizeDelta: {x: -0.00028643874, y: -0.11000267}
+  m_AnchoredPosition: {x: 0.00014317036, y: -0.31999996}
+  m_SizeDelta: {x: -0.00028643874, y: -0.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704835797
 MonoBehaviour:
@@ -13165,6 +13165,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1535772531}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 54b029dc7b9f6dc4dba118cfe6d90eed,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1535772534}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 54b029dc7b9f6dc4dba118cfe6d90eed,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1535772533}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 54b029dc7b9f6dc4dba118cfe6d90eed,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1535772532}
     - targetCorrespondingSourceObject: {fileID: -1599826595754709761, guid: 54b029dc7b9f6dc4dba118cfe6d90eed,
         type: 3}
       insertIndex: -1
@@ -15062,12 +15074,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Great! Now you know all about potion crafting! But what about money? We
-    call that Starshards over here. You may have already noticed the big wooden board
-    at the front of your little garden. It will show which potions are currently
-    needed! This is also a sign to keep an eye on your spendings, since your only
-    money source will be by completing orders! have a look, then go through the potion
-    combinations book and you're all set!
+  m_text: "Great! Now you know everything about potion crafting. But what about money?
+    Here, we call it Starshards. You\u2019ve probably already noticed the large wooden
+    board at the front of your garden\u2014it displays the potions that are currently
+    in demand. This also serves as a reminder to watch your spending, since your
+    only source of income is completing orders. Take a look, browse through the potion
+    combinations book, and you\u2019re all set!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
@@ -15180,8 +15192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0021483377, y: 0.19586411}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.003685236, y: -0.6267656}
-  m_SizeDelta: {x: 0.0073704952, y: -0.026468687}
+  m_AnchoredPosition: {x: -0.003685236, y: -0.31999996}
+  m_SizeDelta: {x: 0.0073704952, y: -0.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801527914
 MonoBehaviour:
@@ -16713,12 +16725,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Our game is all about planting flowers, plucking them when they're ready
-    and craft potions with it! It's really simple... just buy some seeds via the
-    Shop UI inside the house. Then you choose the coresponding seed via Seedbox infront
-    of the house. Afterthat your Seedpouch will chage its color and then you can
-    just pull one seed out. Last but not least, just let the seed fall onto the flowerbed
-    sockets and watch the flower grow!
+  m_text: "Our game is all about planting flowers, harvesting them when they\u2019re
+    ready, and crafting potions from them! It\u2019s really simple: just buy some
+    seeds through the Shop UI inside the house. Then, select the corresponding seed
+    from the Seedbox in front of the house. After that, your Seedpouch will change
+    color, and you can pull out a seed. Finally, drop the seed into the flowerbed
+    sockets and watch your flowers grow!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
@@ -20715,8 +20727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.004, y: 0.16927205}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.007115603, y: -0.58508724}
-  m_SizeDelta: {x: 0.014231217, y: -0.10982523}
+  m_AnchoredPosition: {x: -0.007115603, y: -0.31999993}
+  m_SizeDelta: {x: 0.014231217, y: -0.63999987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188262948
 MonoBehaviour:
@@ -22989,7 +23001,7 @@ PrefabInstance:
     - target: {fileID: 4523300866669645291, guid: 19e82ac7abbd38247b91ce084e6c87b3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.884
+      value: 5.762
       objectReference: {fileID: 0}
     - target: {fileID: 4523300866669645291, guid: 19e82ac7abbd38247b91ce084e6c87b3,
         type: 3}
@@ -28652,7 +28664,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -30385,7 +30397,7 @@ PrefabInstance:
     - target: {fileID: 6832871305961745603, guid: f63bbdc1ac466cc43b6c135ada3edfd2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.735
+      value: -6.63
       objectReference: {fileID: 0}
     - target: {fileID: 6832871305961745603, guid: f63bbdc1ac466cc43b6c135ada3edfd2,
         type: 3}
@@ -31618,6 +31630,69 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &1535772532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535772530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.23942992, y: 3.988389, z: 6.6777134}
+  m_Center: {x: 4.3014803, y: 1.4941373, z: 0.70232105}
+--- !u!65 &1535772533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535772530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.260841, y: 2.7241263, z: 0.17069149}
+  m_Center: {x: 0.13196385, y: 2.1147797, z: 4.2351084}
+--- !u!65 &1535772534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535772530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0925136, y: 3.2345839, z: 0.4056543}
+  m_Center: {x: -1.5605534, y: 2.214406, z: -1.9038231}
 --- !u!1 &1540963756
 GameObject:
   m_ObjectHideFlags: 0
@@ -38990,7 +39065,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -39109,7 +39184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.004, y: -0.014}
+  m_AnchoredPosition: {x: -0.004, y: -0.375}
   m_SizeDelta: {x: 0.8, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667866725
@@ -40175,7 +40250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.81884557}
-  m_AnchoredPosition: {x: 0, y: 0.448}
+  m_AnchoredPosition: {x: 0, y: 0.16}
   m_SizeDelta: {x: 0, y: -0.17593879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724104678
@@ -40198,10 +40273,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''re still here? Great!
-
-    Whenever you''re ready or interested we
-    prepared a little credits screen :) Just press the button below!'
+  m_text: "You\u2019re still here? Awesome!\nWhenever you\u2019re ready, we\u2019ve
+    prepared a little credits screen for you. Just press the button below!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
@@ -42021,8 +42094,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.16927205}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00000035762787, y: -0.5848694}
-  m_SizeDelta: {x: 0.0000007902272, y: -0.110261485}
+  m_AnchoredPosition: {x: -0.00000035762787, y: -0.32000005}
+  m_SizeDelta: {x: 0.0000007902272, y: -0.64000016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791473416
 MonoBehaviour:
@@ -43554,89 +43627,84 @@ MonoBehaviour:
   potionCombinations:
   - petal1: Heart
     petal2: Water
-    potionPrefab: {fileID: 7299806298284992505, guid: 8a377006e69c803409d5cd3b4494d3e4,
+    potionPrefab: {fileID: 5170624575969060385, guid: f80ba53fbaea7894fa6026975c1a28bb,
       type: 3}
     requiresAllPetals: 0
   - petal1: Heart
     petal2: Fire
-    potionPrefab: {fileID: 7097364618476134605, guid: 6a6d155baae73974787a24cc9036545b,
+    potionPrefab: {fileID: 5141543359760178101, guid: 75102e3099f11b948916b0f7d1248342,
       type: 3}
     requiresAllPetals: 0
   - petal1: Heart
     petal2: Galaxy
-    potionPrefab: {fileID: 7105717155430994283, guid: 58a3ca6f6c1a45243911dac3c3e40235,
+    potionPrefab: {fileID: 4307568262757307492, guid: b693b74bf9bd03645a99b96b23cbc08b,
       type: 3}
     requiresAllPetals: 0
   - petal1: Heart
     petal2: Grief
-    potionPrefab: {fileID: 8960215562314746118, guid: 3208a874146b4b7488fb9e16600481b7,
+    potionPrefab: {fileID: 5811504051740506367, guid: 67d60971c8a47f44aa5b9d9ca6e10f31,
       type: 3}
     requiresAllPetals: 0
   - petal1: Water
     petal2: Fire
-    potionPrefab: {fileID: 728216094738292850, guid: 6cade6ebd3e7b5540a5f4a156f92f3b5,
+    potionPrefab: {fileID: 2093601493664837968, guid: d30582d3fee3a0c4e9dc5f8c8e786c90,
       type: 3}
     requiresAllPetals: 0
   - petal1: Water
     petal2: Iridescent
-    potionPrefab: {fileID: 7711208658253778944, guid: 892413f8a6af3924cb261b8475ef976d,
+    potionPrefab: {fileID: 228512319824188700, guid: 5512aac756f73f44da6d047c4bc52af9,
       type: 3}
     requiresAllPetals: 0
   - petal1: Water
     petal2: Galaxy
-    potionPrefab: {fileID: 4280461686406396822, guid: 8bc0673e0920f3d4facd12d15fd00aa3,
+    potionPrefab: {fileID: 7079897279037776499, guid: fc94ece179df17f4db3d51263d9c29e5,
       type: 3}
     requiresAllPetals: 0
   - petal1: Water
     petal2: Grief
-    potionPrefab: {fileID: 7729542625789465275, guid: ba8be48f5da63184dbd69eff776fd3c3,
+    potionPrefab: {fileID: 1071078908355728947, guid: 16d833388b08ce448b6f5371373b4a9b,
       type: 3}
     requiresAllPetals: 0
   - petal1: Fire
     petal2: Galaxy
-    potionPrefab: {fileID: 7203539205007706894, guid: 2f1649b3d8e30f441a607b37292bc8d5,
+    potionPrefab: {fileID: 4117073482215303067, guid: 94c5c68f816d69e498d3e787067ab7bf,
       type: 3}
     requiresAllPetals: 0
   - petal1: Fire
     petal2: Star
-    potionPrefab: {fileID: 3590215693527656709, guid: dbb4f874519651349b4e6b8344a6e52c,
+    potionPrefab: {fileID: 7985836083372878317, guid: abb0869662fb0a649b925ac4c754d219,
       type: 3}
     requiresAllPetals: 0
   - petal1: Fire
     petal2: Grief
-    potionPrefab: {fileID: 3503554101843899319, guid: d093ca02bc3ff4046b49079c99fdbba3,
+    potionPrefab: {fileID: 5986483290239964670, guid: cf8992d0a995fc54b81f4b912ae3000c,
       type: 3}
     requiresAllPetals: 0
   - petal1: Iridescent
     petal2: Galaxy
-    potionPrefab: {fileID: 8393981089210028888, guid: 491cf61947dbc2e4bbc4ecee00da8b9e,
+    potionPrefab: {fileID: 133922491678891575, guid: 1ff1ee7f5784fef408318a12691710d2,
       type: 3}
     requiresAllPetals: 0
   - petal1: Iridescent
     petal2: Star
-    potionPrefab: {fileID: 6152594609393890880, guid: 026c7fba74c75d840906be09abafc336,
+    potionPrefab: {fileID: 7520249819877660561, guid: e23df04c95786434fb0237af8da6df1b,
       type: 3}
     requiresAllPetals: 0
   - petal1: Galaxy
     petal2: Star
-    potionPrefab: {fileID: 1682473266196708427, guid: 9ced558b1475b144892865cdac2b1b64,
+    potionPrefab: {fileID: 40566037767068934, guid: 06e0a49f4dbbc744a80bfa61c8479fe5,
       type: 3}
     requiresAllPetals: 0
   - petal1: Galaxy
     petal2: Grief
-    potionPrefab: {fileID: 5344128676292519850, guid: 79c6b411ca904a9459e2a6486672cfe1,
+    potionPrefab: {fileID: 7970449455616805718, guid: 6de92b0363c9898408d44f3c865d04f8,
       type: 3}
     requiresAllPetals: 0
   - petal1: Star
     petal2: Grief
-    potionPrefab: {fileID: 1895334925515109366, guid: 28523f81f7def034dbcdcef81234ad20,
+    potionPrefab: {fileID: 5534719210840955922, guid: cf705c9c8df632e4bb6e35a99f50b71a,
       type: 3}
     requiresAllPetals: 0
-  - petal1: 
-    petal2: 
-    potionPrefab: {fileID: 8006294562819755971, guid: ec7789d997ff6d74abdec089ea818816,
-      type: 3}
-    requiresAllPetals: 1
   allPetalIDs:
   - Heart
   - Water
@@ -44916,11 +44984,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: When the flower is ready it will stop growing, so keep an eye out! When
-    a flower is ready just point your hand at it (a ray trace will appear in pink)
-    and then just press the inner trigger of your controller to pluck the flower.
-    Once plucked, the Petalbox on the inside of the house will update how many petals
-    you gathered. Next we will talk about Potion crafting!
+  m_text: "When a flower is fully grown, it will stop growing, so keep an eye out!
+    To pick a flower, simply point your hand at it (a pink ray will appear) and press
+    the inner trigger on your controller. Once plucked, the Petalbox inside the house
+    will update to show how many petals you\u2019ve collected. Next, we\u2019ll dive
+    into potion crafting!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
@@ -45946,11 +46014,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'As in every other VR Game you can move and look around with the thumbsticks
-    of your controllers!
+  m_text: 'Just like in any other VR game, you can move around and look in all directions
+    using the thumbsticks on your controllers.
 
-    Fruthermore, you can interact with UI via the front
-    Trigger and pick things up via the inner trigger of your controllers!'
+    Additionally, you can interact
+    with the UI using the front trigger and pick up objects with the inner trigger!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,
@@ -46982,12 +47050,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: On the inside of the house you will see a cauldron. just like with the
-    seeds, just select a Petal via de Petalbox on the left of the Cauldron and pull
-    a petal out of your petalpouch! You will find a levitating tablet right above
-    the petal box as a reminder which petals you can combine and which combinations
-    to avoid! Once the petals have been added to the cauldron, pick up the stirring
-    stick and whisk to your content!
+  m_text: "Inside the house, you\u2019ll find a cauldron. Just like with the seeds,
+    select a petal from the Petalbox to the left of the cauldron and pull it out
+    of your Seedpouch. Above the Petalbox, a floating tablet reminds you which petals
+    can be combined and which combinations to avoid. Once you\u2019ve added the petals
+    to the cauldron, grab the stirring stick and whisk away to your heart\u2019s
+    content!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fa10777093fa7047ab6b36985b2801e, type: 2}
   m_sharedMaterial: {fileID: -979710142591376662, guid: 9fa10777093fa7047ab6b36985b2801e,

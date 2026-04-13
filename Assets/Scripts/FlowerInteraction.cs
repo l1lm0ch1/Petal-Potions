@@ -6,16 +6,16 @@ public class FlowerInteraction : MonoBehaviour
     [Header("Blumenlogik")]
     public FlowerGrowth growthScript;
 
-    private XRBaseInteractable interactable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
 
     void Awake()
     {
-        interactable = GetComponent<XRBaseInteractable>();
+        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
 
-        // Deaktivieren, bis Pflück-Zeit
+        // Deaktivieren, bis Pflï¿½ck-Zeit
         interactable.enabled = false;
 
-        // Registriere das Event, wenn der Trigger gedrückt wird
+        // Registriere das Event, wenn der Trigger gedrï¿½ckt wird
         interactable.selectEntered.AddListener(OnSelectEntered);
     }
 
@@ -42,7 +42,7 @@ public class FlowerInteraction : MonoBehaviour
         }
         else
         {
-            Debug.Log("Blume ist noch nicht bereit zum Pflücken!");
+            Debug.Log("Blume ist noch nicht bereit zum Pflï¿½cken!");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class PetalPouchController : MonoBehaviour
 {
@@ -53,10 +54,10 @@ public class PetalPouchController : MonoBehaviour
 
         //yield return null; // 1 Frame warten
 
-        XRGrabInteractable interactable = petalInstance.GetComponent<XRGrabInteractable>();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable interactable = petalInstance.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         if (interactable != null)
         {
-            interactionManager.SelectEnter(interactor, interactable);
+            interactionManager.SelectEnter((IXRSelectInteractor)interactor, (UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable)interactable);
         }
 
         FlowerInventory.Instance.RemovePetal(currentSelectedPetal, 1);

@@ -32,11 +32,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7365b139f7aec43b23d26b7a48b5a6, type: 3}
   m_Name: MetaQuestTouchPlusControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta Quest Touch Plus Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestplus
   openxrExtensionStrings: XR_META_touch_controller_plus
+  company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &-8863522341167435214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a75d1f5ff90154ea2a8e58222a1f59, type: 3}
+  m_Name: FoveatedRenderingFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.FoveatedRenderingFeature
+  m_enabled: 0
+  nameUi: Foveated Rendering
+  version: 1
+  featureIdInternal: com.unity.openxr.feature.foveatedrendering
+  openxrExtensionStrings: XR_UNITY_foveation XR_FB_foveation XR_FB_foveation_configuration
+    XR_FB_swapchain_update_state XR_FB_foveation_vulkan XR_META_foveation_eye_tracked
+    XR_META_vulkan_swapchain_create_info
   company: Unity
   priority: 0
   required: 0
@@ -53,9 +75,11 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
+  - {fileID: 7170800642678395246}
   - {fileID: -7609295746284832460}
   - {fileID: 6539589484144782079}
   - {fileID: -7016818729866923766}
+  - {fileID: -8863522341167435214}
   - {fileID: -6166749699033751851}
   - {fileID: 926499185512040903}
   - {fileID: -1237802253763175489}
@@ -70,6 +94,7 @@ MonoBehaviour:
   - {fileID: -2856471337416653362}
   - {fileID: 1924339303808976722}
   m_renderMode: 1
+  m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
@@ -77,6 +102,11 @@ MonoBehaviour:
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
+  m_optimizeMultiviewRenderRegions: 0
+  m_multiviewRenderRegionsOptimizationMode: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
+  m_foveatedRenderingApi: 0
+  m_useOpenXRPredictedTime: 0
 --- !u!114 &-8504142193391027754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +243,7 @@ MonoBehaviour:
   - {fileID: -1147698589025020866}
   - {fileID: 3597781171386983183}
   - {fileID: -1367446621026619255}
+  - {fileID: -1452009466678867558}
   - {fileID: 6850020202622217849}
   - {fileID: 221400690996658225}
   - {fileID: -9044839459638100955}
@@ -229,6 +260,7 @@ MonoBehaviour:
   - {fileID: -2882973561872888699}
   - {fileID: 7057098168287662738}
   m_renderMode: 1
+  m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
@@ -236,6 +268,11 @@ MonoBehaviour:
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
+  m_optimizeMultiviewRenderRegions: 0
+  m_multiviewRenderRegionsOptimizationMode: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
+  m_foveatedRenderingApi: 0
+  m_useOpenXRPredictedTime: 0
 --- !u!114 &-2882973561872888699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6ccd3d0ef0f1d458e69421dccbdae1, type: 3}
   m_Name: ValveIndexControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Valve Index Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.valveindex
@@ -290,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
@@ -315,6 +352,28 @@ MonoBehaviour:
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
   openxrExtensionStrings: 
+  company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &-1452009466678867558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a75d1f5ff90154ea2a8e58222a1f59, type: 3}
+  m_Name: FoveatedRenderingFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.FoveatedRenderingFeature
+  m_enabled: 0
+  nameUi: Foveated Rendering
+  version: 1
+  featureIdInternal: com.unity.openxr.feature.foveatedrendering
+  openxrExtensionStrings: XR_UNITY_foveation XR_FB_foveation XR_FB_foveation_configuration
+    XR_FB_swapchain_update_state XR_FB_foveation_vulkan XR_META_foveation_eye_tracked
+    XR_META_vulkan_swapchain_create_info
   company: Unity
   priority: 0
   required: 0
@@ -466,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b862ee14fb479fbfe5fffe655d3ed3, type: 3}
   m_Name: MetaQuestTouchProControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta Quest Touch Pro Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestpro
@@ -571,6 +630,8 @@ MonoBehaviour:
   lateLatchingMode: 0
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
+  multiviewRenderRegionsOptimizationMode: 0
+  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &4343755520019298740
 MonoBehaviour:
@@ -748,6 +809,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &7170800642678395246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01512f11fe5096443ad972feb69271f6, type: 3}
+  m_Name: SpaceWarpFeature Android
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.SpaceWarpFeature
+  m_enabled: 0
+  nameUi: Application SpaceWarp
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.spacewarp
+  openxrExtensionStrings: XR_FB_space_warp
+  company: Unity
+  priority: 0
+  required: 0
+  m_UseRightHandedNDC: 0
 --- !u!114 &7379259321564249508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274c02963f889a64e90bc2e596e21d13, type: 3}
   m_Name: HTCViveControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: HTC Vive Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.htcvive

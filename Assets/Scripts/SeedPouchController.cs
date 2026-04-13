@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class SeedPouchController : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class SeedPouchController : MonoBehaviour
     public void SetSelectedSeed(SeedData seed)
     {
         currentSelectedSeed = seed;
-        Debug.Log("Ausgew‰hltes Seed: " + seed.seedName);
+        Debug.Log("Ausgew√§hltes Seed: " + seed.seedName);
 
         if (pouchVisual != null)
         {
@@ -31,7 +33,7 @@ public class SeedPouchController : MonoBehaviour
             int count = SeedInventory.Instance.GetSeedCount(currentSelectedSeed);
             if (currentSelectedSeed == null || count == 0)
                 return;
-                
+
             XRDirectInteractor interactor = other.GetComponent<XRDirectInteractor>();
             if (interactor != null)
             {
@@ -51,12 +53,10 @@ public class SeedPouchController : MonoBehaviour
 
         GameObject seedInstance = Instantiate(currentSelectedSeed.seedVisualPrefab, spawnPos, spawnRot);
 
-        //yield return null; // 1 Frame warten
-
         XRGrabInteractable interactable = seedInstance.GetComponent<XRGrabInteractable>();
         if (interactable != null)
         {
-            interactionManager.SelectEnter(interactor, interactable);
+            interactionManager.SelectEnter((IXRSelectInteractor)interactor, (IXRSelectInteractable)interactable);
         }
 
         SeedInventory.Instance.RemoveSeed(currentSelectedSeed, 1);
